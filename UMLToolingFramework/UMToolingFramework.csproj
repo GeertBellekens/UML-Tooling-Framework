@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{0FC55607-C9D0-442D-941C-F23AD00CB318}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UMToolingFramework</RootNamespace>
+    <AssemblyName>UMToolingFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Actions\BasicActions\Action.cs" />
+    <Compile Include="Actions\BasicActions\CallAction.cs" />
+    <Compile Include="Actions\BasicActions\CallBehaviorAction.cs" />
+    <Compile Include="Actions\BasicActions\CallOperationAction.cs" />
+    <Compile Include="Actions\BasicActions\InputPin.cs" />
+    <Compile Include="Actions\BasicActions\InvocationAction.cs" />
+    <Compile Include="Actions\BasicActions\MultiplicityElement.cs" />
+    <Compile Include="Actions\BasicActions\OpaqueAction.cs" />
+    <Compile Include="Actions\BasicActions\OutputPin.cs" />
+    <Compile Include="Actions\BasicActions\Pin.cs" />
+    <Compile Include="Actions\BasicActions\SendSignalAction.cs" />
+    <Compile Include="Actions\BasicActions\ValuePin.cs" />
+    <Compile Include="Classes\Dependencies\Abstraction.cs" />
+    <Compile Include="Classes\Dependencies\Dependency.cs" />
+    <Compile Include="Classes\Dependencies\Realization.cs" />
+    <Compile Include="Classes\Dependencies\Substitution.cs" />
+    <Compile Include="Classes\Dependencies\Usage.cs" />
+    <Compile Include="Classes\Interfaces\BehavioredClassifier.cs" />
+    <Compile Include="Classes\Interfaces\Interface.cs" />
+    <Compile Include="Classes\Interfaces\InterfaceRealization.cs" />
+    <Compile Include="Classes\Kernel\AggregationKind.cs" />
+    <Compile Include="Classes\Kernel\Association.cs" />
+    <Compile Include="Classes\Kernel\BehavioralFeature.cs" />
+    <Compile Include="Classes\Kernel\Class.cs" />
+    <Compile Include="Classes\Kernel\Classifier.cs" />
+    <Compile Include="Classes\Kernel\Comment.cs" />
+    <Compile Include="Classes\Kernel\Constraint.cs" />
+    <Compile Include="Classes\Kernel\DataType.cs" />
+    <Compile Include="Classes\Kernel\DirectedRelationship.cs" />
+    <Compile Include="Classes\Kernel\Element.cs" />
+    <Compile Include="Classes\Kernel\ElementImport.cs" />
+    <Compile Include="Classes\Kernel\Enumeration.cs" />
+    <Compile Include="Classes\Kernel\EnumerationLiteral.cs" />
+    <Compile Include="Classes\Kernel\Expression.cs" />
+    <Compile Include="Classes\Kernel\Feature.cs" />
+    <Compile Include="Classes\Kernel\Generalization.cs" />
+    <Compile Include="Classes\Kernel\InstanceSpecification.cs" />
+    <Compile Include="Classes\Kernel\InstanceValue.cs" />
+    <Compile Include="Classes\Kernel\LiteralBoolean.cs" />
+    <Compile Include="Classes\Kernel\LiteralInteger.cs" />
+    <Compile Include="Classes\Kernel\LiteralNull.cs" />
+    <Compile Include="Classes\Kernel\LiteralSpecification.cs" />
+    <Compile Include="Classes\Kernel\LiteralString.cs" />
+    <Compile Include="Classes\Kernel\LiteralUnlimitedNatural.cs" />
+    <Compile Include="Classes\Kernel\MultiplicityElement.cs" />
+    <Compile Include="Classes\Kernel\NamedElement.cs" />
+    <Compile Include="Classes\Kernel\Namespace.cs" />
+    <Compile Include="Classes\Kernel\OpaqueExpression.cs" />
+    <Compile Include="Classes\Kernel\Operation.cs" />
+    <Compile Include="Classes\Kernel\Package.cs" />
+    <Compile Include="Classes\Kernel\PackageableElement.cs" />
+    <Compile Include="Classes\Kernel\PackageImport.cs" />
+    <Compile Include="Classes\Kernel\PackageMerge.cs" />
+    <Compile Include="Classes\Kernel\Parameter.cs" />
+    <Compile Include="Classes\Kernel\ParameterDirectionKind.cs" />
+    <Compile Include="Classes\Kernel\PrimitiveType.cs" />
+    <Compile Include="Classes\Kernel\Property.cs" />
+    <Compile Include="Classes\Kernel\RedefinableElement.cs" />
+    <Compile Include="Classes\Kernel\Relationship.cs" />
+    <Compile Include="Classes\Kernel\Slot.cs" />
+    <Compile Include="Classes\Kernel\StructuralFeature.cs" />
+    <Compile Include="Classes\Kernel\Type.cs" />
+    <Compile Include="Classes\Kernel\TypedElement.cs" />
+    <Compile Include="Classes\Kernel\UnlimitedNatural.cs" />
+    <Compile Include="Classes\Kernel\ValueSpecification.cs" />
+    <Compile Include="Classes\Kernel\VisibilityKind.cs" />
+    <Compile Include="CommonBehaviors\BasicBehaviors\Behavior.cs" />
+    <Compile Include="CommonBehaviors\BasicBehaviors\BehavioralFeature.cs" />
+    <Compile Include="CommonBehaviors\BasicBehaviors\BehavioredClassifier.cs" />
+    <Compile Include="CommonBehaviors\BasicBehaviors\FunctionBehavior.cs" />
+    <Compile Include="CommonBehaviors\BasicBehaviors\OpaqueBehavior.cs" />
+    <Compile Include="CommonBehaviors\BasicBehaviors\OpaqueExpression.cs" />
+    <Compile Include="CommonBehaviors\Communications\AnyReceiveEvent.cs" />
+    <Compile Include="CommonBehaviors\Communications\BehavioralFeature.cs" />
+    <Compile Include="CommonBehaviors\Communications\BehavioredClassifier.cs" />
+    <Compile Include="CommonBehaviors\Communications\CallConcurrencyKind.cs" />
+    <Compile Include="CommonBehaviors\Communications\CallEvent.cs" />
+    <Compile Include="CommonBehaviors\Communications\ChangeEvent.cs" />
+    <Compile Include="CommonBehaviors\Communications\Class.cs" />
+    <Compile Include="CommonBehaviors\Communications\Event.cs" />
+    <Compile Include="CommonBehaviors\Communications\Interface.cs" />
+    <Compile Include="CommonBehaviors\Communications\MessageEvent.cs" />
+    <Compile Include="CommonBehaviors\Communications\Operation.cs" />
+    <Compile Include="CommonBehaviors\Communications\Reception.cs" />
+    <Compile Include="CommonBehaviors\Communications\Signal.cs" />
+    <Compile Include="CommonBehaviors\Communications\SignalEvent.cs" />
+    <Compile Include="CommonBehaviors\Communications\Trigger.cs" />
+    <Compile Include="CompositeStructures\InternalStructures\Classifier.cs" />
+    <Compile Include="CompositeStructures\InternalStructures\ConnectableElement.cs" />
+    <Compile Include="CompositeStructures\InternalStructures\Connector.cs" />
+    <Compile Include="CompositeStructures\InternalStructures\ConnectorEnd.cs" />
+    <Compile Include="CompositeStructures\InternalStructures\Property.cs" />
+    <Compile Include="CompositeStructures\InternalStructures\StructuredClassifier.cs" />
+    <Compile Include="Diagrams\ClassDiagram.cs" />
+    <Compile Include="Diagrams\Diagram.cs" />
+    <Compile Include="Diagrams\DiagramElement.cs" />
+    <Compile Include="Diagrams\SequenceDiagram.cs" />
+    <Compile Include="Interactions\BasicInteractions\ActionExecutionSpecification.cs" />
+    <Compile Include="Interactions\BasicInteractions\BehaviorExecutionSpecification.cs" />
+    <Compile Include="Interactions\BasicInteractions\CreationEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\DestructionEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\ExecutionEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\ExecutionOccurrenceSpecification.cs" />
+    <Compile Include="Interactions\BasicInteractions\ExecutionSpecification.cs" />
+    <Compile Include="Interactions\BasicInteractions\GeneralOrdering.cs" />
+    <Compile Include="Interactions\BasicInteractions\Interaction.cs" />
+    <Compile Include="Interactions\BasicInteractions\InteractionFragment.cs" />
+    <Compile Include="Interactions\BasicInteractions\Lifeline.cs" />
+    <Compile Include="Interactions\BasicInteractions\Message.cs" />
+    <Compile Include="Interactions\BasicInteractions\MessageEnd.cs" />
+    <Compile Include="Interactions\BasicInteractions\MessageKind.cs" />
+    <Compile Include="Interactions\BasicInteractions\MessageOccurrenceSpecification.cs" />
+    <Compile Include="Interactions\BasicInteractions\MessageSort.cs" />
+    <Compile Include="Interactions\BasicInteractions\OccurrenceSpecification.cs" />
+    <Compile Include="Interactions\BasicInteractions\ReceiveOperationEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\ReceiveSignalEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\SendOperationEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\SendSignalEvent.cs" />
+    <Compile Include="Interactions\BasicInteractions\StateInvariant.cs" />
+    <Compile Include="Interactions\Fragments\CombinedFragment.cs" />
+    <Compile Include="Interactions\Fragments\ConsiderIgnoreFragment.cs" />
+    <Compile Include="Interactions\Fragments\Continuation.cs" />
+    <Compile Include="Interactions\Fragments\Gate.cs" />
+    <Compile Include="Interactions\Fragments\Interaction.cs" />
+    <Compile Include="Interactions\Fragments\InteractionConstraint.cs" />
+    <Compile Include="Interactions\Fragments\InteractionFragment.cs" />
+    <Compile Include="Interactions\Fragments\InteractionOperand.cs" />
+    <Compile Include="Interactions\Fragments\InteractionOperatorKind.cs" />
+    <Compile Include="Interactions\Fragments\InteractionUse.cs" />
+    <Compile Include="Interactions\Fragments\Lifeline.cs" />
+    <Compile Include="Interactions\Fragments\PartDecomposition.cs" />
+    <Compile Include="Profiles\Stereotype.cs" />
+    <Compile Include="UMLFactory.cs" />
+    <Compile Include="UMLModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions" />
+    <Folder Include="Actions\BasicActions" />
+    <Folder Include="Classes" />
+    <Folder Include="Classes\Dependencies" />
+    <Folder Include="Classes\Interfaces" />
+    <Folder Include="Classes\Kernel" />
+    <Folder Include="CommonBehaviors" />
+    <Folder Include="CommonBehaviors\BasicBehaviors" />
+    <Folder Include="CommonBehaviors\Communications" />
+    <Folder Include="CompositeStructures" />
+    <Folder Include="CompositeStructures\InternalStructures" />
+    <Folder Include="Diagrams" />
+    <Folder Include="Interactions" />
+    <Folder Include="Interactions\BasicInteractions" />
+    <Folder Include="Interactions\Fragments" />
+    <Folder Include="Profiles" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
