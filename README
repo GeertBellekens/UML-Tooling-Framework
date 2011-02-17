@@ -1,0 +1,20 @@
+UML Tooling Framework
+by Geert Bellekens (geert@bellekens.com)
+Copyright 2011 , Geert Bellekens
+
+Homepage:
+http://geertbellekens.github.com/UML-Tooling-Framework/
+
+Description:
+The UML Tooling Framework is a tool-independent C# library containing the UML Metamodel (v2.3) in the form of interfaces.
+It is meant to be implemented by a wrapper library that implements the interfaces for a specific UML CASE Tool.
+This library does not cover the whole metamodel yet. To be implemented when needed.
+
+Contains:
+- UMLToolingFramwork/ For each element in the UML metamodel there is an interface defining its properties.
+
+Dependencies:
+- None
+
+More info:
+http://geertbellekens.wordpress.com
