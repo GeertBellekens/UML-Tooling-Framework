@@ -32,6 +32,21 @@ namespace TSF.UmlToolingFramework.UML {
       }
       return instance;
     }
+    /// <summary>
+    /// returns the first instance of the factory.
+    /// To be used when only one factory exists
+    /// </summary>
+    /// <returns>the first (and only?) instance of the factory</returns>
+    public static UMLFactory getInstance()
+    {
+    	if (instances.Count > 0)
+    	{
+    		return instances.Values.ElementAt(0);
+    	}else
+    	{
+    		return null;
+    	}
+    }
 
     public UMLModel model { get; set; }
 
