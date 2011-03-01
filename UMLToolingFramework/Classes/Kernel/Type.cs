@@ -9,8 +9,8 @@ using UML=TSF.UmlToolingFramework.UML;
 namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 	public interface  Type : PackageableElement {
 		
-		HashSet<UML.Classes.Kernel.Property> getUsingAttributes();
-		HashSet<UML.Classes.Kernel.Parameter> getUsingOperations();
+		
+		HashSet<T> getDependentTypedElements<T>() where T:UML.Classes.Kernel.TypedElement;
 	}
 	
 }

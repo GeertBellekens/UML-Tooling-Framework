@@ -9,5 +9,6 @@ namespace TSF.UmlToolingFramework.UML {
     UML.Diagrams.Diagram selectedDiagram { get; set; }
     void saveElement(UML.Classes.Kernel.Element element);
     void saveDiagram(UML.Diagrams.Diagram diagram);
+    void selectElement(UML.Classes.Kernel.Element element);
   }
 }
