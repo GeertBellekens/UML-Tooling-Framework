@@ -29,5 +29,11 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
         // NON STANDARD UML
         // convenience method to get all messages that call this operation
         HashSet<UML.Interactions.BasicInteractions.Message> getCallingMessages();
+        /// <summary>
+        /// NON STANDARD UML
+        /// convenience method to get all CallOperationActions that call this operation.
+        /// </summary>
+        /// <returns>all CallOperationActions that call this operation</returns>
+        HashSet<UML.Actions.BasicActions.CallOperationAction> getDependentCallOperationActions();
         }
 }
