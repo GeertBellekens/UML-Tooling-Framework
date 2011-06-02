@@ -178,6 +178,17 @@
     <Compile Include="Interactions\Fragments\Lifeline.cs" />
     <Compile Include="Interactions\Fragments\PartDecomposition.cs" />
     <Compile Include="Profiles\Stereotype.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\ConnectionPointReference.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\FinalState.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\Pseudostate.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\PseudostateKind.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\Region.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\State.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\StateMachine.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\TimeEvent.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\Transition.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\TransitionKind.cs" />
+    <Compile Include="StateMachines\BehaviorStateMachines\Vertex.cs" />
     <Compile Include="UMLFactory.cs" />
     <Compile Include="UMLModel.cs" />
   </ItemGroup>
@@ -200,6 +211,8 @@
     <Folder Include="Interactions\BasicInteractions" />
     <Folder Include="Interactions\Fragments" />
     <Folder Include="Profiles" />
+    <Folder Include="StateMachines" />
+    <Folder Include="StateMachines\BehaviorStateMachines" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>
