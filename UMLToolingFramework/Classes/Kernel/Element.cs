@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UML = TSF.UmlToolingFramework;
 
 namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
-	public interface  Element {
+	public interface  Element:UMLItem {
         HashSet<Element> ownedElements { get; set; }
         HashSet<Comment> ownedComments { get; set; }
         Element owner { get; set; }
@@ -14,5 +14,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
         List<Relationship> relationships { get; set; }
         List<T> getRelationships<T>() where T : Relationship;
         HashSet<T> getUsingDiagrams<T>() where T : class,UML.Diagrams.Diagram;
+        UMLItem getItemFromRelativePath(List<string> relativePath);
 	}
 }

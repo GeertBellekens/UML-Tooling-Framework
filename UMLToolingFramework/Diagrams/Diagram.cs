@@ -3,21 +3,31 @@
 using UML = TSF.UmlToolingFramework;
 
 namespace TSF.UmlToolingFramework.UML.Diagrams {
-  public interface Diagram {
+	public interface Diagram:UMLItem {
         string                           name            { get; set; }
         HashSet<DiagramElement>          diagramElements { get; set; }
         List<UML.Classes.Kernel.Element> elements        { get; set; }
-        UML.Classes.Kernel.Element       owner           { get; set; }
+        UML.Classes.Kernel.Element owner {get;set;}
         
         int     height  { get; set; }
         int     width   { get; set; }
-        string  comment { get; set; }
+        string comment {get;set;}
 
+        /// <summary>
         /// gets the diagramElements for that contain an Element the given type
-        HashSet<DiagramElement> getDiagramElements<T>() 
-          where T:UML.Classes.Kernel.Element;
-       
+        /// </summary>
+        /// <returns>a set of diagramElement of the given type</returns>
+        HashSet<DiagramElement> getDiagramElements<T>() where T:UML.Classes.Kernel.Element;
+        /// <summary>
+        /// searches downward for the item with the given relative path
+        /// This relative path includes the own name
+        /// </summary>
+        /// <param name="relativePath">list of names inlcuding the own name</param>
+        /// <returns>the item matching the path</returns>
+        UMLItem getItemFromRelativePath(List<string> relativePath);
+        /// <summary>
+        /// saves the diagram
+        /// </summary>
         void save();
-        void open();
   }
 }

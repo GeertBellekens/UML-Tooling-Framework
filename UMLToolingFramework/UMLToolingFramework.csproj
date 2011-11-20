@@ -190,6 +190,7 @@
     <Compile Include="StateMachines\BehaviorStateMachines\TransitionKind.cs" />
     <Compile Include="StateMachines\BehaviorStateMachines\Vertex.cs" />
     <Compile Include="UMLFactory.cs" />
+    <Compile Include="UMLItem.cs" />
     <Compile Include="UMLModel.cs" />
   </ItemGroup>
   <ItemGroup>
