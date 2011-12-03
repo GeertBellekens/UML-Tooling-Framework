@@ -19,5 +19,6 @@ namespace TSF.UmlToolingFramework.UML {
     /// <returns>the element with the given FQN</returns>
     UMLItem getItemFromFQN(string FQN);
     HashSet<UML.Classes.Kernel.Package> rootPackages {get;}
+    UML.UMLItem selectedItem{get;set;}
   }
 }

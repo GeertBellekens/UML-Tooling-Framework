@@ -62,6 +62,8 @@ namespace TSF.UmlToolingFramework.UML {
     /// creates a new PrimitiveType based on the given object to wrap
     public abstract UML.Classes.Kernel.PrimitiveType createPrimitiveType
       (Object objectToWrap);
+    
+    public abstract UML.Diagrams.Diagram createDiagram(object objectToWrap);
 
     /// returns a collection of Elements based on the collection of objects to
     /// wrap

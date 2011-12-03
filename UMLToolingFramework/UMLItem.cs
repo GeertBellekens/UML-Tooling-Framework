@@ -15,5 +15,9 @@ namespace TSF.UmlToolingFramework.UML
 		/// opens this item in the tool
 		/// </summary>
 		void open();
+		/// <summary>
+		/// the name of the item
+		/// </summary>
+		string name {get;}
 	}
 }
