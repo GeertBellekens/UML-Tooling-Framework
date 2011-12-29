@@ -45,6 +45,7 @@
     <Compile Include="Activities\FundamentalActivities\Activity.cs" />
     <Compile Include="Activities\FundamentalActivities\ActivityGroup.cs" />
     <Compile Include="Activities\FundamentalActivities\ActivityNode.cs" />
+    <Compile Include="Profiles\TaggedValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Actions\BasicActions\Action.cs" />
     <Compile Include="Actions\BasicActions\CallAction.cs" />
