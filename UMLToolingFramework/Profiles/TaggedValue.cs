@@ -7,6 +7,7 @@ namespace TSF.UmlToolingFramework.UML.Profiles
 	public interface TaggedValue
 	{
 		string name {get;set;}
-		object Value {get;set;}
+		object tagValue {get;set;}
+		UML.Classes.Kernel.Element owner {get;set;}
 	}
 }

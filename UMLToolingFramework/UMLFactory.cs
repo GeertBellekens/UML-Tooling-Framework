@@ -401,5 +401,21 @@ namespace TSF.UmlToolingFramework.UML {
 
     public abstract UML.Diagrams.DiagramElement createNewDiagramElement
         (UML.Diagrams.Diagram owner, UML.Classes.Kernel.Element element);
+  	
+	public virtual ICollection<UML.Profiles.TaggedValue> createTaggedValues(IEnumerable taggedValuesToWrap)
+	{
+		List<UML.Profiles.TaggedValue> taggedValues = new List<UML.Profiles.TaggedValue>();
+		foreach (object tagToWrap in taggedValuesToWrap) 
+		{
+			UML.Profiles.TaggedValue taggedValue = this.createTaggedValue(tagToWrap);
+			if (taggedValue != null)
+			{
+				taggedValues.Add(taggedValue);
+			}
+		}
+		return taggedValues;
+	}
+	
+	public abstract UML.Profiles.TaggedValue createTaggedValue (object objectToWrap);
   }
 }
