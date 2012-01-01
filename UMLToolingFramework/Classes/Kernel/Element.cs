@@ -16,5 +16,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
         HashSet<T> getUsingDiagrams<T>() where T : class,UML.Diagrams.Diagram;
         UMLItem getItemFromRelativePath(List<string> relativePath);
         HashSet<UML.Profiles.TaggedValue> taggedValues{get;set;}
+        HashSet<UML.Profiles.TaggedValue> getReferencingTaggedValues();
 	}
 }
