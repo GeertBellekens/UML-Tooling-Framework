@@ -19,5 +19,9 @@ namespace TSF.UmlToolingFramework.UML
 		/// the name of the item
 		/// </summary>
 		string name {get;}
+		/// <summary>
+		/// the owner of the item
+		/// </summary>
+		UML.Classes.Kernel.Element owner {get;set;}
 	}
 }
