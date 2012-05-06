@@ -23,5 +23,10 @@ namespace TSF.UmlToolingFramework.UML
 		/// the owner of the item
 		/// </summary>
 		UML.Classes.Kernel.Element owner {get;set;}
+		/// <summary>
+		/// the fully qualified name of the item.
+		/// contains the full node path from the root of the model to this item.
+		/// </summary>
+		string fqn {get;}
 	}
 }
