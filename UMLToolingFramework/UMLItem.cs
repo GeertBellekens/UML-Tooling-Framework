@@ -28,5 +28,9 @@ namespace TSF.UmlToolingFramework.UML
 		/// contains the full node path from the root of the model to this item.
 		/// </summary>
 		string fqn {get;}
+		/// <summary>
+		/// opens the properties diaglog for this item
+		/// </summary>
+		void openProperties();
 	}
 }
