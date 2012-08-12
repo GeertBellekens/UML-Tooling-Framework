@@ -29,5 +29,10 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// saves the diagram
         /// </summary>
         void save();
+        /// <summary>
+        /// select the given item in the diagram
+        /// </summary>
+        /// <param name="itemToSelect">the item to select</param>
+        void selectItem(UMLItem itemToSelect);
   }
 }
