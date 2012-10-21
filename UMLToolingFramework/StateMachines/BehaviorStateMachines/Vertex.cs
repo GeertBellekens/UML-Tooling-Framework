@@ -23,7 +23,7 @@ namespace TSF.UmlToolingFramework.UML.StateMachines.BehaviorStateMachines
 		/// context Vertex::incoming derive:
 		/// Transition.allInstances() -> select(t | t.target = self)
 		/// </summary>
-		Transition incomings {get;set;}
+		HashSet<Transition> incomings {get;set;}
 		
 		/// <summary>
 		/// The region that contains this vertex. {Subsets Element::owner}
