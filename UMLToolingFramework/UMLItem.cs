@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TSF.UmlToolingFramework.UML
 {
@@ -32,5 +33,9 @@ namespace TSF.UmlToolingFramework.UML
 		/// opens the properties diaglog for this item
 		/// </summary>
 		void openProperties();
+		/// <summary>
+		/// the stereotypes on this element
+		/// </summary>
+		HashSet<UML.Profiles.Stereotype> stereotypes{get;}
 	}
 }
