@@ -34,5 +34,12 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// </summary>
         /// <param name="itemToSelect">the item to select</param>
         void selectItem(UMLItem itemToSelect);
+        /// <summary>
+        /// adds an element to the diagram
+        /// </summary>
+        /// <param name="element">the element to add</param>
+        /// <returns>the new diagramElement</returns>
+        DiagramElement addToDiagram(UML.Classes.Kernel.Element element);
+        DiagramElement addToDiagram(UML.Diagrams.Diagram diagram);
   }
 }
