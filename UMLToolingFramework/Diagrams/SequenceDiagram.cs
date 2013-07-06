@@ -2,10 +2,12 @@
 
 using TSF.UmlToolingFramework;
 
-namespace TSF.UmlToolingFramework.UML.Diagrams {
-  public interface SequenceDiagram:Diagram {
+namespace TSF.UmlToolingFramework.UML.Diagrams 
+{
+  public interface SequenceDiagram:InterActionDiagram 
+  {
 
   	
-	List<UML.Classes.Kernel.Operation> getCalledOperations();
+	
   }
 }
