@@ -12,6 +12,10 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         int     height  { get; set; }
         int     width   { get; set; }
         string comment {get;set;}
+  		/// <summary>
+  		/// The elements that have this diagram as composite diagram
+  		/// </summary>
+        HashSet<UML.Classes.Kernel.Element> compositeElements {get;}
 
         /// <summary>
         /// gets the diagramElements for that contain an Element the given type
@@ -40,6 +44,12 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// <param name="element">the element to add</param>
         /// <returns>the new diagramElement</returns>
         DiagramElement addToDiagram(UML.Classes.Kernel.Element element);
+        /// <summary>
+        /// add the given diagram to this diagram
+        /// </summary>
+        /// <param name="diagram">the diagram to add</param>
+        /// <returns>the new DiagramElement</returns>
         DiagramElement addToDiagram(UML.Diagrams.Diagram diagram);
+        
   }
 }
