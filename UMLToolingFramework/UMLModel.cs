@@ -20,5 +20,11 @@ namespace TSF.UmlToolingFramework.UML {
     UMLItem getItemFromFQN(string FQN);
     HashSet<UML.Classes.Kernel.Package> rootPackages {get;}
     UML.UMLItem selectedItem{get;set;}
+    /// <summary>
+    /// lets the user select a package and return that
+    /// The user should be shown a dialog that allows him to select a package from the model
+    /// </summary>
+    /// <returns>the package selected by the user</returns>
+    UML.Classes.Kernel.Package getUserSelectedPackage();
   }
 }
