@@ -10,6 +10,8 @@ namespace SchemaBuilderFramework
 	public interface SchemaProperty
 	{
 		UML.Classes.Kernel.Property sourceProperty {get;set;}
+		UML.Classes.Kernel.Property subSetProperty {get;set;}
 		SchemaElement owner {get;set;}
+		UML.Classes.Kernel.Property createSubsetProperty();
 	}
 }

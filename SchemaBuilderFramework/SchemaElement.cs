@@ -11,8 +11,10 @@ namespace SchemaBuilderFramework
 	public interface SchemaElement
 	{
 		UML.Classes.Kernel.Classifier sourceElement {get;set;}
+		UML.Classes.Kernel.Classifier subsetElement {get;set;}
 		Schema owner {get;set;}
 		HashSet<SchemaProperty> schemaProperties {get;set;}
 		HashSet<SchemaAssociation> schemaAssociations {get;set;}
+		UML.Classes.Kernel.Classifier createSubsetElement(UML.Classes.Kernel.Package destinationPackage);
 	}
 }
