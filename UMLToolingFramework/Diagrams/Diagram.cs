@@ -50,6 +50,10 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// <param name="diagram">the diagram to add</param>
         /// <returns>the new DiagramElement</returns>
         DiagramElement addToDiagram(UML.Diagrams.Diagram diagram);
+        /// <summary>
+        /// Automaticaly layouts the diagram so it looks nice
+        /// </summary>
+        void autoLayout();
         
   }
 }
