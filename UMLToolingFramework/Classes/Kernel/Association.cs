@@ -6,9 +6,11 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     List<Property> navigableOwnedEnds { get; set; }
     List<Property> ownedEnds { get; set; }
     List<Type> endTypes { get; set; }
+    /// <summary>
     /// Each end represents participation of instances of the classifier
     /// connected to the end in links of the association. This is an ordered
-    // association. Subsets Namespace::member.
+    /// association. Subsets Namespace::member.
+    /// </summary>
     List<Property> memberEnds { get; set; }
 	}
 }

@@ -4,7 +4,7 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 	public interface Property : StructuralFeature {
 		bool               isDerived           { get; set; }
 		bool               isDerivedUnion      { get; set; }
-    bool               isComposite         { get; set; }
+   		bool               isComposite         { get; set; }
 		string             _default            { get; set; }
 		AggregationKind    aggregation         { get; set; }
 		ValueSpecification defaultValue        { get; set; }
@@ -12,10 +12,10 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 		HashSet<Property>  subsettedProperties { get; set; }
 		Property           opposite            { get; set; }
 		Classifier         classifier          { get; set; }
-    Class              _class              { get; set; }
+    	Class              _class              { get; set; }
 		Association        owningAssociation   { get; set; }
 		Association        association         { get; set; }
-    DataType           datatype            { get; set; }
+    	DataType           datatype            { get; set; }
 
     /// The query isNavigable() indicates whether it is possible to navigate 
     /// across the property.
