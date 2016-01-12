@@ -88,6 +88,8 @@ namespace TSF.UmlToolingFramework.UML {
 
     public abstract T createNewDiagram<T>
       (UML.Classes.Kernel.Element owner, String name) where T:class,UML.Diagrams.Diagram;
+    
+    public abstract UML.Profiles.TaggedValue createNewTaggedValue(UML.Classes.Kernel.Element owner, string name);
 
     /// clones a diagram cloning all diagramElements and their related 
     /// elements
