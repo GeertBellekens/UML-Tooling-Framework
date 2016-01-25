@@ -10,6 +10,7 @@ namespace SchemaBuilderFramework
 	/// </summary>
 	public interface SchemaElement
 	{
+		string name {get;set;}
 		UML.Classes.Kernel.Classifier sourceElement {get;set;}
 		UML.Classes.Kernel.Classifier subsetElement {get;set;}
 		Schema owner {get;set;}

@@ -45,5 +45,9 @@ namespace TSF.UmlToolingFramework.UML
 		/// select this element in the currently opened diagram
 		/// </summary>
 		void selectInCurrentDiagram();
+		/// <summary>
+		/// deletes this element from the model
+		/// </summary>
+		void delete();
 	}
 }

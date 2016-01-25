@@ -26,5 +26,11 @@ namespace TSF.UmlToolingFramework.UML {
     /// </summary>
     /// <returns>the package selected by the user</returns>
     UML.Classes.Kernel.Package getUserSelectedPackage();
+    /// <summary>
+    /// Lets the user select an element from the model and return that
+    /// </summary>
+    /// <param name="allowedTypes">the subtypes of UML.Classes.Kernel.Element that should be used as a filter</param>
+    /// <returns>the selected element</returns>
+    UML.Classes.Kernel.Element getUserSelectedElement(List<string> allowedTypes);
   }
 }

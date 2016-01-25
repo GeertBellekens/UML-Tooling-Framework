@@ -15,6 +15,18 @@ namespace SchemaBuilderFramework
 		UML.Classes.Kernel.Association subsetAssociation {get;set;}
 		List<SchemaElement> relatedElements {get;set;}
 		SchemaElement owner {get;set;}
+		/// <summary>
+		/// the schema element on the other side of the association
+		/// </summary>
+		SchemaElement otherElement {get;set;}
 		UML.Classes.Kernel.Association createSubsetAssociation();
+		/// <summary>
+		/// returns the end of the schema association's source association that is on the owner side
+		/// </summary>
+		UML.Classes.Kernel.Property thisEnd {get;set;}
+		/// <summary>
+		/// returns the end of the schema association's source association that is on the other side
+		/// </summary>
+		UML.Classes.Kernel.Property otherEnd {get;set;}
 	}
 }

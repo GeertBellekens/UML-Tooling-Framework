@@ -19,5 +19,10 @@ namespace SchemaBuilderFramework
 		/// </summary>
 		/// <param name="destinationPackage">the package to create the subset in</param>
 		void createSubsetModel(UML.Classes.Kernel.Package destinationPackage);
+		/// <summary>
+		/// updates the subset model linked to given messageElement
+		/// </summary>
+		/// <param name="messageElement">The message element that is the root for the message subset model</param>
+		void updateSubsetModel(UML.Classes.Kernel.Class messageElement);
 	}
 }
