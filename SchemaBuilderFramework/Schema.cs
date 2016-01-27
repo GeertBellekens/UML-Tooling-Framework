@@ -24,5 +24,13 @@ namespace SchemaBuilderFramework
 		/// </summary>
 		/// <param name="messageElement">The message element that is the root for the message subset model</param>
 		void updateSubsetModel(UML.Classes.Kernel.Class messageElement);
+		/// <summary>
+		/// list of tagged value names to ignore when updating tagged values
+		/// </summary>
+		List<string> ignoredStereotypes{get;set;}
+		/// <summary>
+		/// list of stereotypes of elements to ignore when updating a subset model
+		/// </summary>
+		List<string> ignoredTaggedValues{get;set;}
 	}
 }

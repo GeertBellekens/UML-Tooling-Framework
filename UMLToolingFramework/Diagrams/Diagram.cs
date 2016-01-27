@@ -54,6 +54,16 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// Automaticaly layouts the diagram so it looks nice
         /// </summary>
         void autoLayout();
+        /// <summary>
+        /// indicates if the given element is shown on this diagram
+        /// </summary>
+        /// <param name="element">the element to look for</param>
+        /// <returns>true if the given element is shown on this diagram, false otherwise</returns>
+        bool contains(UML.Classes.Kernel.Element element);
+        /// <summary>
+        /// refreshes the diagram to show any new changes
+        /// </summary>
+        void reFresh();
         
   }
 }

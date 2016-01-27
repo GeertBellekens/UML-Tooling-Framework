@@ -11,6 +11,10 @@ namespace TSF.UmlToolingFramework.UML {
     UML.Diagrams.Diagram currentDiagram { get; set; }
     void saveElement(UML.Classes.Kernel.Element element);
     void saveDiagram(UML.Diagrams.Diagram diagram);
+    /// <summary>
+    /// reload the open diagrams
+    /// </summary>
+    void reloadDiagrams();
     
     /// <summary>
     /// finds the items (if any) with the given fully qualified name (. separated)

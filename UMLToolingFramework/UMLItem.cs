@@ -49,5 +49,9 @@ namespace TSF.UmlToolingFramework.UML
 		/// deletes this element from the model
 		/// </summary>
 		void delete();
+		/// <summary>
+		/// save the changes to this item
+		/// </summary>
+		void save();
 	}
 }
