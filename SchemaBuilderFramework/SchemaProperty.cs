@@ -12,6 +12,6 @@ namespace SchemaBuilderFramework
 		UML.Classes.Kernel.Property sourceProperty {get;set;}
 		UML.Classes.Kernel.Property subSetProperty {get;set;}
 		SchemaElement owner {get;set;}
-		UML.Classes.Kernel.Property createSubsetProperty();
+		void createSubsetProperty();
 	}
 }
