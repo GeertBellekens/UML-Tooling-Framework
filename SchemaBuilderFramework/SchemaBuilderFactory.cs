@@ -55,6 +55,7 @@ namespace SchemaBuilderFramework
 		public abstract Schema createSchema(object objectToWrap);
 		public abstract SchemaElement createSchemaElement(Schema owner,object objectToWrap);
 		public abstract SchemaProperty createSchemaProperty(SchemaElement owner,object objectToWrap);
+		public abstract SchemaLiteral createSchemaLiteral(SchemaElement owner,object objectToWrap);
 		public abstract SchemaAssociation createSchemaAssociation(SchemaElement owner,object objectToWrap);
 	}
 }

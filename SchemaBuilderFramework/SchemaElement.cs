@@ -16,6 +16,7 @@ namespace SchemaBuilderFramework
 		Schema owner {get;set;}
 		HashSet<SchemaProperty> schemaProperties {get;set;}
 		HashSet<SchemaAssociation> schemaAssociations {get;set;}
+		HashSet<SchemaLiteral> schemaLiterals {get;set;}
 		UML.Classes.Kernel.Classifier createSubsetElement(UML.Classes.Kernel.Package destinationPackage);
 	}
 }
