@@ -53,5 +53,10 @@ namespace TSF.UmlToolingFramework.UML
 		/// save the changes to this item
 		/// </summary>
 		void save();
+		/// <summary>
+		/// returns a list of diagrams that show this item
+		/// </summary>
+		/// <returns>all diagrams that show this item</returns>
+		List<UML.Diagrams.Diagram> getDependentDiagrams();
 	}
 }
