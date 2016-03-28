@@ -30,6 +30,10 @@ namespace TSF.UmlToolingFramework.UML
 		/// </summary>
 		string fqn {get;}
 		/// <summary>
+		/// returns the unique ID of this item.
+		/// </summary>
+		string uniqueID {get;}
+		/// <summary>
 		/// opens the properties diaglog for this item
 		/// </summary>
 		void openProperties();
