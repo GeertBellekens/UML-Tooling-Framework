@@ -21,14 +21,14 @@ namespace SchemaBuilderFramework
 	    /// </summary>
 	    /// <param name="destinationPackage">the package to create the subset in</param>
 	    /// <param name="copyDatatype"></param>
-	    void createSubsetModel(UML.Classes.Kernel.Package destinationPackage,bool copyDatatype);
+	    void createSubsetModel(UML.Classes.Kernel.Package destinationPackage,bool copyDatatype, List<string>datatypesToCopy);
 
 	    /// <summary>
 	    /// updates the subset model linked to given messageElement
 	    /// </summary>
 	    /// <param name="messageElement">The message element that is the root for the message subset model</param>
 	    /// <param name="copyDataType"></param>
-	    void updateSubsetModel(UML.Classes.Kernel.Classifier messageElement,bool copyDataType);
+	    void updateSubsetModel(UML.Classes.Kernel.Classifier messageElement,bool copyDataType, List<string>datatypesToCopy);
 		/// <summary>
 		/// list of tagged value names to ignore when updating tagged values
 		/// </summary>
