@@ -51,6 +51,7 @@
     <Compile Include="SchemaElement.cs" />
     <Compile Include="SchemaLiteral.cs" />
     <Compile Include="SchemaProperty.cs" />
+    <Compile Include="SchemaSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\UML-Tooling-Framework\UMLToolingFramework\UMLToolingFramework.csproj">

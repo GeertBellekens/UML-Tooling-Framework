@@ -20,22 +20,17 @@ namespace SchemaBuilderFramework
 	    /// creates a subset of the source model with only the properties and associations used in this schema
 	    /// </summary>
 	    /// <param name="destinationPackage">the package to create the subset in</param>
-	    /// <param name="copyDatatype"></param>
-	    void createSubsetModel(UML.Classes.Kernel.Package destinationPackage,bool copyDatatype, List<string>datatypesToCopy);
+	    void createSubsetModel(UML.Classes.Kernel.Package destinationPackage);
 
 	    /// <summary>
 	    /// updates the subset model linked to given messageElement
 	    /// </summary>
 	    /// <param name="messageElement">The message element that is the root for the message subset model</param>
-	    /// <param name="copyDataType"></param>
-	    void updateSubsetModel(UML.Classes.Kernel.Classifier messageElement,bool copyDataType, List<string>datatypesToCopy);
-		/// <summary>
-		/// list of tagged value names to ignore when updating tagged values
-		/// </summary>
-		List<string> ignoredStereotypes{get;set;}
-		/// <summary>
-		/// list of stereotypes of elements to ignore when updating a subset model
-		/// </summary>
-		List<string> ignoredTaggedValues{get;set;}
+	    void updateSubsetModel(UML.Classes.Kernel.Classifier messageElement);
+		
+	    /// <summary>
+	    /// the settings this schema has to work with
+	    /// </summary>
+	    SchemaSettings settings {get;set;}
 	}
 }

@@ -52,7 +52,7 @@ namespace SchemaBuilderFramework
 			this.model = model;
 			addFactory(model, this);
 		}
-		public abstract Schema createSchema(object objectToWrap);
+		public abstract Schema createSchema(object objectToWrap, SchemaSettings settings);
 		public abstract SchemaElement createSchemaElement(Schema owner,object objectToWrap);
 		public abstract SchemaProperty createSchemaProperty(SchemaElement owner,object objectToWrap);
 		public abstract SchemaLiteral createSchemaLiteral(SchemaElement owner,object objectToWrap);
