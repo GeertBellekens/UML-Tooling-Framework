@@ -35,6 +35,15 @@ namespace SchemaBuilderFramework
 		/// indicates whether we need to copy the generalizations for datatypes
 		/// </summary>
 		bool copyDataTypeGeneralizations {get;set;}
+		/// <summary>
+		/// the name of the tagged value to trace attributes to their model source
+		/// </summary>
+		string sourceAttributeTagName {get;set;}
+		/// <summary>
+		/// the name of the tagged value to trace associations to their model source
+		/// </summary>		
+		string sourceAssociationTagName {get;set;}
+		
 		
 	}
 }
