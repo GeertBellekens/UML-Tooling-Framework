@@ -63,6 +63,7 @@
     <Compile Include="Activities\FundamentalActivities\Activity.cs" />
     <Compile Include="Activities\FundamentalActivities\ActivityGroup.cs" />
     <Compile Include="Activities\FundamentalActivities\ActivityNode.cs" />
+    <Compile Include="Classes\AssociationClasses\AssociationClass.cs" />
     <Compile Include="Diagrams\ActivityDiagram.cs" />
     <Compile Include="Diagrams\BehaviorDiagram.cs" />
     <Compile Include="Diagrams\CommunicationDiagram.cs" />
@@ -236,6 +237,7 @@
     <Folder Include="Classes\Dependencies" />
     <Folder Include="Classes\Interfaces" />
     <Folder Include="Classes\Kernel" />
+    <Folder Include="Classes\AssociationClasses" />
     <Folder Include="CommonBehaviors" />
     <Folder Include="CommonBehaviors\BasicBehaviors" />
     <Folder Include="CommonBehaviors\Communications" />
