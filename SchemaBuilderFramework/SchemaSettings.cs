@@ -43,6 +43,10 @@ namespace SchemaBuilderFramework
 		/// the name of the tagged value to trace associations to their model source
 		/// </summary>		
 		string sourceAssociationTagName {get;set;}
+		/// <summary>
+		/// indicates whether the generalizations should be copied to the subset if the parent element is in the subset as well.
+		/// </summary>
+		bool redirectGeneralizationsToSubset {get;set;}
 		
 		
 	}
