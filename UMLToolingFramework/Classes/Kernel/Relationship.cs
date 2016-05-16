@@ -12,5 +12,10 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     /// saves the changes to the relationship
     /// </summary>
     void save();
+    /// <summary>
+    /// convenience method to return the information flows that realize this Relationship
+    /// </summary>
+    /// <returns>the information flows that realize this Relationship</returns>
+    HashSet<UML.InfomationFlows.InformationFlow> getInformationFlows();
 	}
 }

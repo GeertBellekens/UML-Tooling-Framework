@@ -79,6 +79,8 @@
     <Compile Include="Diagrams\StructureDiagram.cs" />
     <Compile Include="Diagrams\TimingDiagram.cs" />
     <Compile Include="Diagrams\UseCaseDiagram.cs" />
+    <Compile Include="InfomationFlows\InformationFlow.cs" />
+    <Compile Include="InfomationFlows\InformationItem.cs" />
     <Compile Include="Profiles\TaggedValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Actions\BasicActions\Action.cs" />
@@ -247,6 +249,7 @@
     <Folder Include="Interactions" />
     <Folder Include="Interactions\BasicInteractions" />
     <Folder Include="Interactions\Fragments" />
+    <Folder Include="InfomationFlows" />
     <Folder Include="Profiles" />
     <Folder Include="StateMachines" />
     <Folder Include="StateMachines\BehaviorStateMachines" />
