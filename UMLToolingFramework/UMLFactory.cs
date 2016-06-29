@@ -352,7 +352,7 @@ namespace TSF.UmlToolingFramework.UML {
               as UML.Classes.Kernel.Type;
         }
         clonedProperty.aggregation  = sourceProperty.aggregation;
-        clonedProperty._isNavigable = sourceProperty._isNavigable;
+        clonedProperty.isNavigable = sourceProperty.isNavigable;
         clonedProperty.visibility   = sourceProperty.visibility;
         clonedProperty.isStatic     = sourceProperty.isStatic;
         clonedElement               = clonedProperty;

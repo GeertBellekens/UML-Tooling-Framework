@@ -22,10 +22,10 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     /// Property::isNavigable() : Boolean
     /// isNavigable = not classifier->isEmpty() or 
     /// association.owningAssociation.navigableOwnedEnd->includes(self)
-    bool isNavigable();
+    bool getIsNavigable();
         
     /// TODO: remove this non UML property once the real isNavigable() is
     /// implementable
-    bool _isNavigable { get; set; }
+    bool isNavigable { get; set; }
 	}
 }

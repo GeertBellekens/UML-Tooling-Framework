@@ -47,6 +47,16 @@ namespace SchemaBuilderFramework
 		/// indicates whether the generalizations should be copied to the subset if the parent element is in the subset as well.
 		/// </summary>
 		bool redirectGeneralizationsToSubset {get;set;}
+		/// <summary>
+		/// indicates whether the notes in the subset elements should be prefixed
+		/// </summary>
+		bool prefixNotes {get;set;}
+		/// <summary>
+		/// the prefix to use when prefixing the notes
+		/// </summary>
+		string prefixNotesText {get;set;}
+		
+			
 		
 		
 	}
