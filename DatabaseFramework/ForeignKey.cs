@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 namespace DatabaseFramework
 {
@@ -8,6 +9,7 @@ namespace DatabaseFramework
 	/// </summary>
 	public interface ForeignKey:Constraint
 	{
+		Table foreignTable {get;set;}
 		
 	}
 }

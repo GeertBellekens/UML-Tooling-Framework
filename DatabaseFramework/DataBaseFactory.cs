@@ -5,9 +5,10 @@ using System.Collections.Generic;
 namespace DatabaseFramework
 {
 	/// <summary>
-	/// Description of PrimaryKey.
+	/// Description of DataBaseFactory.
 	/// </summary>
-	public interface PrimaryKey:Constraint
+	public interface DataBaseFactory
 	{
+		List<BaseDataType> baseDataTypes {get;}
 	}
 }

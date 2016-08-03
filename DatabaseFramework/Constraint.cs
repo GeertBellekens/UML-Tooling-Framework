@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 namespace DatabaseFramework
 {
@@ -8,6 +9,8 @@ namespace DatabaseFramework
 	/// </summary>
 	public interface Constraint
 	{
-		
+		string name {get;set;}
+		Table owner {get;set;}
+		List<Column> involvedColumns {get;set;}
 	}
 }
