@@ -6,10 +6,9 @@ namespace DatabaseFramework
 	/// <summary>
 	/// Description of DataType.
 	/// </summary>
-	public interface DataType
+	public interface DataType:DatabaseItem
 	{
 		BaseDataType type {get;set;}
-		string name {get;}
 		int length {get;set;}
 		int precision {get;set;}
 			

@@ -49,6 +49,7 @@
     <Compile Include="Constraint.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="DataBaseFactory.cs" />
+    <Compile Include="DatabaseItem.cs" />
     <Compile Include="DataType.cs" />
     <Compile Include="ForeignKey.cs" />
     <Compile Include="PrimaryKey.cs" />

@@ -7,9 +7,8 @@ namespace DatabaseFramework
 	/// <summary>
 	/// Description of Constraint.
 	/// </summary>
-	public interface Constraint
+	public interface Constraint:DatabaseItem
 	{
-		string name {get;set;}
 		Table owner {get;set;}
 		List<Column> involvedColumns {get;set;}
 	}

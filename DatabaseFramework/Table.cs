@@ -7,11 +7,14 @@ namespace DatabaseFramework
 	/// <summary>
 	/// Description of Table.
 	/// </summary>
-	public interface Table
+	public interface Table:DatabaseItem
 	{
-		string name {get;set;}
 		Database owner {get;set;}
 		List<Column> columns {get;set;}
 		List<Constraint> constraints {get;set;}
+		PrimaryKey primaryKey {get;set;}
+		List<ForeignKey> foreignKeys{get;set;}
+
+		void addColumn(Column column);
 	}
 }
