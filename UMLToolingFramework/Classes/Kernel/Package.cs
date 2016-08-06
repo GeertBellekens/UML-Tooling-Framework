@@ -8,5 +8,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     Package               nestingPackage { get; set; }
     HashSet<PackageMerge> packageMerges  { get; set; }
     void exportToXMI(string filePath);
+    Package getRootPackage();
 	}
 }
