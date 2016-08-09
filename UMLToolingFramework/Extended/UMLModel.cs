@@ -2,7 +2,7 @@
 using TSF.UmlToolingFramework;
 using TSF.UmlToolingFramework.UML.Classes.Kernel;
 
-namespace TSF.UmlToolingFramework.UML {
+namespace TSF.UmlToolingFramework.UML.Extended {
   public interface UMLModel {
     /// the currently selected element
     UML.Classes.Kernel.Element selectedElement { get;set; }
@@ -23,7 +23,7 @@ namespace TSF.UmlToolingFramework.UML {
     /// <returns>the element with the given FQN</returns>
     UMLItem getItemFromFQN(string FQN);
     HashSet<UML.Classes.Kernel.Package> rootPackages {get;}
-    UML.UMLItem selectedItem{get;set;}
+    UML.Extended.UMLItem selectedItem{get;set;}
     /// <summary>
     /// lets the user select a package and return that
     /// The user should be shown a dialog that allows him to select a package from the model

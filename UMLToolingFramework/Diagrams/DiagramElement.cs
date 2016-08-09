@@ -2,7 +2,7 @@
 
 namespace TSF.UmlToolingFramework.UML.Diagrams {
   /// the representation of an element on a diagram
-  public interface DiagramElement:UMLItem {
+  public interface DiagramElement:UML.Extended.UMLItem {
     UML.Classes.Kernel.Element element   { get; set; }
     int                        xPosition { get; set; }
     int                        yPosition { get; set; }

@@ -11,9 +11,9 @@ namespace SchemaBuilderFramework
 	/// </summary>
 	public abstract class SchemaBuilderFactory
 	{
-		private static Dictionary<UML.UMLModel, SchemaBuilderFactory> instances = new Dictionary<UML.UMLModel,SchemaBuilderFactory>();
+		private static Dictionary<UML.Extended.UMLModel, SchemaBuilderFactory> instances = new Dictionary<UML.Extended.UMLModel,SchemaBuilderFactory>();
 	
-	    private static void addFactory(UML.UMLModel model, SchemaBuilderFactory factory) 
+	    private static void addFactory(UML.Extended.UMLModel model, SchemaBuilderFactory factory) 
 	    {
 		      if (!instances.ContainsKey(model)) 
 			  {
@@ -24,7 +24,7 @@ namespace SchemaBuilderFramework
 
 	
 	    /// returns the singleton instance of the factory
-	    public static SchemaBuilderFactory getInstance(UML.UMLModel model) 
+	    public static SchemaBuilderFactory getInstance(UML.Extended.UMLModel model) 
 	    {
 	    	SchemaBuilderFactory instance = null;
 	    	instances.TryGetValue(model,out instance);
@@ -46,8 +46,8 @@ namespace SchemaBuilderFramework
 	    	}
 	    }
 		
-		public UML.UMLModel model {get;set;}
-		protected SchemaBuilderFactory(UML.UMLModel model)
+		public UML.Extended.UMLModel model {get;set;}
+		protected SchemaBuilderFactory(UML.Extended.UMLModel model)
 		{
 			this.model = model;
 			addFactory(model, this);

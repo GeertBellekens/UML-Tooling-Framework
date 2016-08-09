@@ -5,7 +5,7 @@ using System.Linq;
 
 using TSF.UmlToolingFramework;
 
-namespace TSF.UmlToolingFramework.UML {
+namespace TSF.UmlToolingFramework.UML.Extended {
 
   public abstract class UMLFactory {
     private static Dictionary<UMLModel, UMLFactory> instances = 

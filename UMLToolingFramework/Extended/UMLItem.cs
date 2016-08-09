@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TSF.UmlToolingFramework.UML
+namespace TSF.UmlToolingFramework.UML.Extended
 {
 	/// <summary>
 	/// a UML Item is an object from the UML world that can be part of a UML model

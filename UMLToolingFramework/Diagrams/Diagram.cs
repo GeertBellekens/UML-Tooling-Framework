@@ -3,7 +3,7 @@
 using UML = TSF.UmlToolingFramework;
 
 namespace TSF.UmlToolingFramework.UML.Diagrams {
-	public interface Diagram:UMLItem {
+	public interface Diagram:UML.Extended.UMLItem {
         string                           name            { get; set; }
         HashSet<DiagramElement>          diagramElements { get; set; }
         List<UML.Classes.Kernel.Element> elements        { get; set; }
@@ -28,7 +28,7 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// </summary>
         /// <param name="relativePath">list of names inlcuding the own name</param>
         /// <returns>the item matching the path</returns>
-        UMLItem getItemFromRelativePath(List<string> relativePath);
+        UML.Extended.UMLItem getItemFromRelativePath(List<string> relativePath);
         /// <summary>
         /// saves the diagram
         /// </summary>
@@ -37,7 +37,7 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// select the given item in the diagram
         /// </summary>
         /// <param name="itemToSelect">the item to select</param>
-        void selectItem(UMLItem itemToSelect);
+        void selectItem(UML.Extended.UMLItem itemToSelect);
         /// <summary>
         /// adds an element to the diagram
         /// </summary>

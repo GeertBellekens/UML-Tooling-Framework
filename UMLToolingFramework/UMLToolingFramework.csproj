@@ -79,6 +79,11 @@
     <Compile Include="Diagrams\StructureDiagram.cs" />
     <Compile Include="Diagrams\TimingDiagram.cs" />
     <Compile Include="Diagrams\UseCaseDiagram.cs" />
+    <Compile Include="Extended\UMLFactory.cs" />
+    <Compile Include="Extended\UMLItem.cs" />
+    <Compile Include="Extended\UMLModel.cs" />
+    <Compile Include="Extended\UMLModelOutput.cs" />
+    <Compile Include="Extended\UMLModelOutputItem.cs" />
     <Compile Include="InfomationFlows\InformationFlow.cs" />
     <Compile Include="InfomationFlows\InformationItem.cs" />
     <Compile Include="Profiles\TaggedValue.cs" />
@@ -226,9 +231,6 @@
     <Compile Include="StateMachines\BehaviorStateMachines\Transition.cs" />
     <Compile Include="StateMachines\BehaviorStateMachines\TransitionKind.cs" />
     <Compile Include="StateMachines\BehaviorStateMachines\Vertex.cs" />
-    <Compile Include="UMLFactory.cs" />
-    <Compile Include="UMLItem.cs" />
-    <Compile Include="UMLModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions" />
@@ -250,6 +252,7 @@
     <Folder Include="Interactions\BasicInteractions" />
     <Folder Include="Interactions\Fragments" />
     <Folder Include="InfomationFlows" />
+    <Folder Include="Extended" />
     <Folder Include="Profiles" />
     <Folder Include="StateMachines" />
     <Folder Include="StateMachines\BehaviorStateMachines" />
