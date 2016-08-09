@@ -16,5 +16,7 @@ namespace DatabaseFramework
 		List<ForeignKey> foreignKeys{get;set;}
 
 		void addColumn(Column column);
+
+		void addConstraint(Constraint constraint);
 	}
 }

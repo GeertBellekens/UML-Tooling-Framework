@@ -55,6 +55,17 @@
     <Compile Include="PrimaryKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
+    <Compile Include="Transformation\DatabaseTransformer.cs" />
+    <Compile Include="Transformation\TableTransformer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Transformation" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UMLToolingFramework\UMLToolingFramework.csproj">
+      <Project>{0fc55607-c9d0-442d-941c-f23ad00cb318}</Project>
+      <Name>UMLToolingFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
