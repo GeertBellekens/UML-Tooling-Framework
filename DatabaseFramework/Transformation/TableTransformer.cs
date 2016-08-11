@@ -12,9 +12,13 @@ namespace DatabaseFramework.Transformation
 	public interface TableTransformer
 	{
 		/// <summary>
+		/// the database in which the tables are made
+		/// </summary>
+		Database database {get;set;}
+		/// <summary>
 		/// the resulting table
 		/// </summary>
-		DB.Table table {get;set;}
+		Table table {get;set;}
 		/// <summary>
 		/// the logical classes from which the table was transformed
 		/// </summary>
@@ -24,6 +28,8 @@ namespace DatabaseFramework.Transformation
 		/// </summary>
 		/// <param name="logicalClasses">the logical classes for wich to create a table</param>
 		/// <returns>the created table</returns>
-		DB.Table transformLogicalClasses(List<UML.Classes.Kernel.Class> logicalClasses);
+		Table transformLogicalClasses(List<UML.Classes.Kernel.Class> logicalClasses);
+		Table transformLogicalClass(UML.Classes.Kernel.Class logicalClass);
+		List<ColumnTransformer> columnTransformers {get;set;}
 	}
 }

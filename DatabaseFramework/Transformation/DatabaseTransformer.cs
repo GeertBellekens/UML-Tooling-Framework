@@ -11,10 +11,12 @@ namespace DatabaseFramework.Transformation
 	/// </summary>
 	public interface DatabaseTransformer
 	{
-		DB.Database database {get;set;}
+		DB.Database newDatabase {get;set;}
 		UML.Classes.Kernel.Package logicalPackage {get;set;}
 		List<TableTransformer> tableTransformers {get;set;}
+		UML.Extended.UMLModel model {get;set;}
 		DB.Database transformLogicalPackage(UML.Classes.Kernel.Package logicalPackage);
+		DB.Database existingDatabase {get;set;}
 		
 	}
 }

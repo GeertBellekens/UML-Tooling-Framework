@@ -55,6 +55,7 @@
     <Compile Include="PrimaryKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
+    <Compile Include="Transformation\ColumnTransformer.cs" />
     <Compile Include="Transformation\DatabaseTransformer.cs" />
     <Compile Include="Transformation\TableTransformer.cs" />
   </ItemGroup>
