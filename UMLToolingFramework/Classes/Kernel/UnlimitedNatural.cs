@@ -1,9 +1,10 @@
 ﻿namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
   public class UnlimitedNatural {
     private int _value;
-    public int? integerValue { 
+    
+    public int? integerValue {
       get { if(this._value >= 0) { return _value; } else { return null; } }
-      set { }
+      set { if (value.HasValue) this._value = value.Value; }
     }
     
     public bool isUnlimited {
