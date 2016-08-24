@@ -31,5 +31,6 @@ namespace DatabaseFramework.Transformation
 		Table transformLogicalClasses(List<UML.Classes.Kernel.Class> logicalClasses);
 		Table transformLogicalClass(UML.Classes.Kernel.Class logicalClass);
 		List<ColumnTransformer> columnTransformers {get;set;}
+		List<ForeignKeyTransformer> foreignKeyTransformers {get;set;}
 	}
 }
