@@ -10,5 +10,6 @@ namespace TSF.UmlToolingFramework.UML.Profiles
 		object tagValue {get;set;}
 		UML.Classes.Kernel.Element owner {get;set;}
 		void save();
+		string comment {get;set;}
 	}
 }

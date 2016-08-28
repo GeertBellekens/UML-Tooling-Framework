@@ -9,5 +9,6 @@ namespace DatabaseFramework.Compare
 		newItem,
 		deletedItem,
 		changed,
+		dboverride
 	}	
 }

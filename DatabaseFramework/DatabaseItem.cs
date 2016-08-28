@@ -11,5 +11,6 @@ namespace DatabaseFramework
 		string name {get;set;}
 		string itemType {get;}
 		string properties {get;}
+		bool isOverridden {get;set;}
 	}
 }
