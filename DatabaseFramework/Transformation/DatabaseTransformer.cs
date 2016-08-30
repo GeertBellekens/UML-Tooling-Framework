@@ -17,6 +17,8 @@ namespace DatabaseFramework.Transformation
 		UML.Extended.UMLModel model {get;set;}
 		DB.Database transformLogicalPackage(UML.Classes.Kernel.Package logicalPackage);
 		DB.Database existingDatabase {get;set;}
+		DB.Database saveDatabase();
+		void refresh();
 		
 	}
 }

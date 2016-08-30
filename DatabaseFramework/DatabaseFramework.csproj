@@ -61,6 +61,7 @@
     <Compile Include="Transformation\ColumnTransformer.cs" />
     <Compile Include="Transformation\DatabaseTransformer.cs" />
     <Compile Include="Transformation\ForeignKeyTransformer.cs" />
+    <Compile Include="Transformation\PrimaryKeyTransformer.cs" />
     <Compile Include="Transformation\TableTransformer.cs" />
   </ItemGroup>
   <ItemGroup>
