@@ -14,5 +14,6 @@ namespace DatabaseFramework.Transformation
 	{
 		DB.ForeignKey foreignKey {get;set;}
 		UML.Classes.Kernel.Association logicalAssociation {get;set;}
+		void resetName();
 	}
 }

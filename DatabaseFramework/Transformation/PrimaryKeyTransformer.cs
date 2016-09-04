@@ -9,6 +9,6 @@ namespace DatabaseFramework.Transformation
 	public interface PrimaryKeyTransformer
 	{
 		PrimaryKey primaryKey {get;set;}
-		
+		void resetName();
 	}
 }
