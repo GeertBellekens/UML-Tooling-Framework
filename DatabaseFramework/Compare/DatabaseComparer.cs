@@ -13,5 +13,6 @@ namespace DatabaseFramework.Compare
 		Database existingDatabase {get;set;}
 		List<DatabaseItemComparison> comparedItems {get;set;}
 		void compare();
+		void save();
 	}
 }

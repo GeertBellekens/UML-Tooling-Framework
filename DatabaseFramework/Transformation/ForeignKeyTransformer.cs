@@ -15,9 +15,6 @@ namespace DatabaseFramework.Transformation
 		DB.ForeignKey foreignKey {get;set;}
 		UML.Classes.Kernel.Association logicalAssociation {get;set;}
 		void resetName();
-		/// <summary>
-		/// save the changes from the transformer to the existing database
-		/// </summary>
-		void save();
+
 	}
 }

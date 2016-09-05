@@ -9,7 +9,7 @@ namespace DatabaseFramework
 	/// </summary>
 	public interface Table:DatabaseItem
 	{
-		Database owner {get;set;}
+		Database databaseOwner {get;set;}
 		List<Column> columns {get;set;}
 		List<Constraint> constraints {get;set;}
 		PrimaryKey primaryKey {get;set;}

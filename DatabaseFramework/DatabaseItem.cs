@@ -12,5 +12,11 @@ namespace DatabaseFramework
 		string itemType {get;}
 		string properties {get;}
 		bool isOverridden {get;set;}
+		void save();
+		void delete();
+		void Update(DatabaseItem newDatabaseItem);
+		DatabaseItem owner {get;}
+		DataBaseFactory factory {get;}
+		void createAsNewItem(Database existingDatabase);
 	}
 }

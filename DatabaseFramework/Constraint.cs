@@ -9,7 +9,7 @@ namespace DatabaseFramework
 	/// </summary>
 	public interface Constraint:DatabaseItem
 	{
-		Table owner {get;set;}
+		Table ownerTable {get;set;}
 		List<Column> involvedColumns {get;set;}
 	}
 }

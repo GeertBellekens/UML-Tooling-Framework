@@ -10,7 +10,7 @@ namespace DatabaseFramework
 	public interface Database:DatabaseItem
 	{
 		string type {get;set;}
-		DataBaseFactory factory {get;set;}
+		DataBaseFactory databaseFactory {get;set;}
 		List<Table> tables {get;set;}
 		void addTable(Table table);
 		Table getCorrespondingTable(Table externalTable);

@@ -8,7 +8,7 @@ namespace DatabaseFramework
 	/// </summary>
 	public interface Column:DatabaseItem
 	{
-		Table owner {get;set;}
+		Table ownerTable {get;set;}
 		DataType type {get;set;}
 		bool isNotNullable {get;set;}
 	}

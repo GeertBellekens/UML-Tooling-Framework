@@ -32,9 +32,5 @@ namespace DatabaseFramework.Transformation
 		Table transformLogicalClass(UML.Classes.Kernel.Class logicalClass);
 		List<ColumnTransformer> columnTransformers {get;set;}
 		List<ForeignKeyTransformer> foreignKeyTransformers {get;set;}
-		/// <summary>
-		/// save the changes from the transformer to the existing database
-		/// </summary>
-		void save();
 	}
 }

@@ -14,5 +14,6 @@ namespace DatabaseFramework.Compare
 		DatabaseComparisonStatusEnum comparisonStatus {get;set;}
 		string comparisonStatusName {get;}
 		string itemType{get;}
+		void save(Database existingDatabase);
 	}
 }
