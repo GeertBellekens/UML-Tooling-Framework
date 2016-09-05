@@ -16,5 +16,9 @@ namespace DatabaseFramework.Transformation
 		Column column {get;set;}
 		UML.Classes.Kernel.Property logicalProperty {get;set;}
 		Column transformLogicalProperty(UML.Classes.Kernel.Property attribute);
+		/// <summary>
+		/// save the changes from the transformer to the existing database
+		/// </summary>
+		void save();
 	}
 }
