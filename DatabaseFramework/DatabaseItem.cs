@@ -14,9 +14,10 @@ namespace DatabaseFramework
 		bool isOverridden {get;set;}
 		void save();
 		void delete();
-		void Update(DatabaseItem newDatabaseItem);
+		void update(DatabaseItem newDatabaseItem, bool save = true);
 		DatabaseItem owner {get;}
 		DataBaseFactory factory {get;}
 		void createAsNewItem(Database existingDatabase);
+		bool isValid{get;}
 	}
 }
