@@ -1,5 +1,6 @@
 ﻿
 using System;
+using UML = TSF.UmlToolingFramework.UML;
 
 namespace DatabaseFramework
 {
@@ -19,5 +20,7 @@ namespace DatabaseFramework
 		DataBaseFactory factory {get;}
 		void createAsNewItem(Database existingDatabase);
 		bool isValid{get;}
+		UML.Classes.Kernel.Element logicalElement {get;}
+		void Select();
 	}
 }
