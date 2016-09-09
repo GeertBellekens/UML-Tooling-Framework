@@ -59,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="Transformation\ColumnTransformer.cs" />
+    <Compile Include="Transformation\DatabaseItemTransformer.cs" />
     <Compile Include="Transformation\DatabaseTransformer.cs" />
     <Compile Include="Transformation\ForeignKeyTransformer.cs" />
     <Compile Include="Transformation\PrimaryKeyTransformer.cs" />

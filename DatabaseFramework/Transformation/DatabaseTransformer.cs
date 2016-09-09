@@ -9,7 +9,7 @@ namespace DatabaseFramework.Transformation
 	/// <summary>
 	/// Description of DatbaseTransformer.
 	/// </summary>
-	public interface DatabaseTransformer
+	public interface DatabaseTransformer:DatabaseItemTransformer
 	{
 		DB.Database newDatabase {get;set;}
 		UML.Classes.Kernel.Package logicalPackage {get;set;}
@@ -18,6 +18,7 @@ namespace DatabaseFramework.Transformation
 		DB.Database transformLogicalPackage(UML.Classes.Kernel.Package logicalPackage);
 		DB.Database existingDatabase {get;set;}
 		void refresh();
+		void renameItem(DB.DatabaseItem item, string newName);
 		
 	}
 }

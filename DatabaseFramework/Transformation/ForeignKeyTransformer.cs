@@ -10,7 +10,7 @@ namespace DatabaseFramework.Transformation
 	/// <summary>
 	/// Description of ForeignKeyTransformer.
 	/// </summary>
-	public interface ForeignKeyTransformer
+	public interface ForeignKeyTransformer:DatabaseItemTransformer
 	{
 		DB.ForeignKey foreignKey {get;set;}
 		UML.Classes.Kernel.Association logicalAssociation {get;set;}

@@ -10,11 +10,12 @@ namespace DatabaseFramework.Transformation
 	/// <summary>
 	/// Description of ColumnTransformer.
 	/// </summary>
-	public interface ColumnTransformer
+	public interface ColumnTransformer:DatabaseItemTransformer
 	{
 		Table table {get;set;}
 		Column column {get;set;}
 		UML.Classes.Kernel.Property logicalProperty {get;set;}
 		Column transformLogicalProperty(UML.Classes.Kernel.Property attribute);
+		
 	}
 }

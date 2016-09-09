@@ -9,7 +9,7 @@ namespace DatabaseFramework.Transformation
 	/// <summary>
 	/// Description of TableTransformer.
 	/// </summary>
-	public interface TableTransformer
+	public interface TableTransformer:DatabaseItemTransformer
 	{
 		/// <summary>
 		/// the database in which the tables are made
@@ -32,5 +32,6 @@ namespace DatabaseFramework.Transformation
 		Table transformLogicalClass(UML.Classes.Kernel.Class logicalClass);
 		List<ColumnTransformer> columnTransformers {get;set;}
 		List<ForeignKeyTransformer> foreignKeyTransformers {get;set;}
+		PrimaryKeyTransformer primaryKeyTransformer {get;set;}
 	}
 }
