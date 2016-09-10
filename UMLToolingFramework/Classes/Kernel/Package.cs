@@ -9,5 +9,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     HashSet<PackageMerge> packageMerges  { get; set; }
     void exportToXMI(string filePath);
     Package getRootPackage();
+    void refresh();
 	}
 }
