@@ -18,7 +18,7 @@ namespace DatabaseFramework
 		void update(DatabaseItem newDatabaseItem, bool save = true);
 		DatabaseItem owner {get;}
 		DataBaseFactory factory {get;}
-		void createAsNewItem(Database existingDatabase);
+		DatabaseItem createAsNewItem(Database existingDatabase,bool save = true);
 		bool isValid{get;}
 		UML.Classes.Kernel.Element logicalElement {get;}
 		void Select();

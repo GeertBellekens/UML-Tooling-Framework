@@ -11,5 +11,6 @@ namespace DatabaseFramework
 		Table ownerTable {get;set;}
 		DataType type {get;set;}
 		bool isNotNullable {get;set;}
+		int position{get;set;}
 	}
 }

@@ -31,5 +31,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 	    /// TODO: remove this non UML property once the real isNavigable() is
 	    /// implementable
 	    bool isNavigable { get; set; }
+
 	}
 }
