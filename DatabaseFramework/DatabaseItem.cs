@@ -22,5 +22,6 @@ namespace DatabaseFramework
 		bool isValid{get;}
 		UML.Classes.Kernel.Element logicalElement {get;}
 		void Select();
+		int position {get;set;}
 	}
 }
