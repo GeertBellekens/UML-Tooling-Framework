@@ -64,6 +64,7 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// refreshes the diagram to show any new changes
         /// </summary>
         void reFresh();
+
         
   }
 }

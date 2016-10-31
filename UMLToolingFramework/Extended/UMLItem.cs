@@ -62,5 +62,15 @@ namespace TSF.UmlToolingFramework.UML.Extended
 		/// </summary>
 		/// <returns>all diagrams that show this item</returns>
 		List<UML.Diagrams.Diagram> getDependentDiagrams();
+		/// <summary>
+        /// indicates if this diagram is readOnly and cannot be modified at this moment
+        /// </summary>
+       	bool isReadOnly {get;}
+       	/// <summary>
+       	/// makes the diagram writable.
+       	/// </summary>
+       	/// <param name="overrideLocks">indicates if current locks should be overrridden</param>
+       	/// <returns>true if successful</returns>
+	    bool makeWritable(bool overrideLocks);
 	}
 }
