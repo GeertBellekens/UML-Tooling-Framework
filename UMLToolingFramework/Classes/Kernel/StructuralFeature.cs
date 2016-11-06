@@ -3,6 +3,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 	                                      TypedElement, 
 	                                      MultiplicityElement 
   {
-    bool isReadOnly { get; set; }
+    bool isUMLReadOnly { get; set; }
 	}
 }
