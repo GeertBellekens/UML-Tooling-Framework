@@ -36,5 +36,10 @@ namespace TSF.UmlToolingFramework.UML.Extended {
     /// <param name="allowedTypes">the subtypes of UML.Classes.Kernel.Element that should be used as a filter</param>
     /// <returns>the selected element</returns>
     UML.Classes.Kernel.Element getUserSelectedElement(List<string> allowedTypes);
+	/// <summary>
+	/// selects the root package for the currently selected item
+	/// </summary>
+	/// <returns>the root package for the currently selecte item</returns>
+	UML.Classes.Kernel.Package getCurrentRootPackage();
   }
 }
