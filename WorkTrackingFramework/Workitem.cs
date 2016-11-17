@@ -17,5 +17,7 @@ namespace WorkTrackingFramework
 		string assignedTo {get;set;}
 		string area {get;set;}
 		string iteration {get;set;}
+		Project ownerProject {get;set;}
+		void save();
 	}
 }
