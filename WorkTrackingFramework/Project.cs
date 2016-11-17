@@ -10,5 +10,6 @@ namespace WorkTrackingFramework
 	public interface Project
 	{
 		List<Workitem> workitems {get;set;}
+		string name {get;set;}
 	}
 }
