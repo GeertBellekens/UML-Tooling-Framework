@@ -12,6 +12,7 @@ namespace DatabaseFramework.Compare
 		Database newDatabase {get;set;}
 		Database existingDatabase {get;set;}
 		List<DatabaseItemComparison> comparedItems {get;set;}
+		void setOverride(DatabaseItemComparison overrideCompare, bool overrideValue,List<DatabaseItem>updatedNewItems = null);
 		void compare();
 		void save();
 	}

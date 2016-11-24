@@ -23,5 +23,6 @@ namespace DatabaseFramework
 		UML.Classes.Kernel.Element logicalElement {get;}
 		void Select();
 		int position {get;set;}
+		DatabaseItem derivedFromItem {get;set;}
 	}
 }
