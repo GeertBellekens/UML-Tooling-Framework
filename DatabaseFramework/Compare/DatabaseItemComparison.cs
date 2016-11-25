@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 
 namespace DatabaseFramework.Compare
@@ -16,5 +17,8 @@ namespace DatabaseFramework.Compare
 		string itemType{get;}
 		void updatePosition(int i);
 		void save(Database existingDatabase);
+		DatabaseItemComparison ownerComparison {get;set;}
+		List<DatabaseItemComparison> ownedComparisons {get;set;}
+		DatabaseItemComparison addOwnedComparison(DatabaseItem existingItem, DatabaseItem newItem);
 	}
 }
