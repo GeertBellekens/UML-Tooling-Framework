@@ -20,5 +20,6 @@ namespace DatabaseFramework.Compare
 		DatabaseItemComparison ownerComparison {get;set;}
 		List<DatabaseItemComparison> ownedComparisons {get;set;}
 		DatabaseItemComparison addOwnedComparison(DatabaseItem existingItem, DatabaseItem newItem);
+		void rename(string newName);
 	}
 }

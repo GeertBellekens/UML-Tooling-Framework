@@ -12,5 +12,7 @@ namespace DatabaseFramework
 		DataType type {get;set;}
 		bool isNotNullable {get;set;}
 		int position{get;set;}
+		bool isRemote{get;}
+		bool isRenamed {get;set;}
 	}
 }
