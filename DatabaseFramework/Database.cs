@@ -13,6 +13,7 @@ namespace DatabaseFramework
 		DataBaseFactory databaseFactory {get;set;}
 		List<Table> tables {get;set;}
 		void addTable(Table table);
+		void removeTable(Table table);
 		Table getCorrespondingTable(Table externalTable);
 	}
 }

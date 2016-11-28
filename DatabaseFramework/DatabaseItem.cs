@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using UML = TSF.UmlToolingFramework.UML;
 
 namespace DatabaseFramework
@@ -20,7 +21,7 @@ namespace DatabaseFramework
 		DataBaseFactory factory {get;}
 		DatabaseItem createAsNewItem(DatabaseItem owner,bool save = true);
 		bool isValid{get;}
-		UML.Classes.Kernel.Element logicalElement {get;}
+		List<UML.Classes.Kernel.Element> logicalElements {get;}
 		void Select();
 		int position {get;set;}
 		DatabaseItem derivedFromItem {get;set;}
