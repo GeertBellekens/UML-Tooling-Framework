@@ -49,5 +49,11 @@
     <Compile Include="Workitem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UMLToolingFramework\UMLToolingFramework.csproj">
+      <Project>{0fc55607-c9d0-442d-941c-f23ad00cb318}</Project>
+      <Name>UMLToolingFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
