@@ -14,6 +14,6 @@ namespace MappingFramework
 		/// <summary>
 		/// The path from the root element to the owner/source of the end
 		/// </summary>
-		string ownerPath {get;set;}
+		string mappingPath {get;set;}
 	}
 }
