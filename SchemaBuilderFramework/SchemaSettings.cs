@@ -55,9 +55,9 @@ namespace SchemaBuilderFramework
 		/// the prefix to use when prefixing the notes
 		/// </summary>
 		string prefixNotesText {get;set;}
-		
-			
-		
-		
+		/// <summary>
+		/// the output name to use
+		/// </summary>
+		string outputName {get;set;}
 	}
 }
