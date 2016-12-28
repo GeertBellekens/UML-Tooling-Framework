@@ -6,5 +6,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     uint lower { get; set; }
     ValueSpecification upperValue { get; set; }
     ValueSpecification lowerValue { get; set; }
+    Multiplicity multiplicity {get;set;}
 	}
 }

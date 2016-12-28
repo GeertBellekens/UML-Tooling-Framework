@@ -32,5 +32,10 @@ namespace SchemaBuilderFramework
 	    /// the settings this schema has to work with
 	    /// </summary>
 	    SchemaSettings settings {get;set;}
+	    
+	    /// <summary>
+	    /// the name of the schema
+	    /// </summary>
+	    string name {get;}
 	}
 }
