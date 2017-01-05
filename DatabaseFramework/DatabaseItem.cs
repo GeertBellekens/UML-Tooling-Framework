@@ -14,6 +14,7 @@ namespace DatabaseFramework
 		string itemType {get;}
 		string properties {get;}
 		bool isOverridden {get;set;}
+		bool isRenamed {get;set;}
 		void save();
 		void delete();
 		void update(DatabaseItem newDatabaseItem, bool save = true);
