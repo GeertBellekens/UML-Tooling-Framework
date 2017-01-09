@@ -11,5 +11,7 @@ namespace DatabaseFramework
 	{
 		Table ownerTable {get;set;}
 		List<Column> involvedColumns {get;set;}
+		void removeColumn(Column column);
+		void removeColumn(Column column, Column replacement);
 	}
 }

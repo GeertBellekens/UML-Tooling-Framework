@@ -18,6 +18,7 @@ namespace DatabaseFramework
 
 		void addColumn(Column column);
 		void removeColumn(Column column);
+		void removeColumn(Column column, Column replacement);
 
 		void addConstraint(Constraint constraint);
 		void removeConstraint(Constraint constraint);
