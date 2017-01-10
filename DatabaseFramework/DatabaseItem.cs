@@ -21,10 +21,12 @@ namespace DatabaseFramework
 		DatabaseItem owner {get;}
 		DataBaseFactory factory {get;}
 		DatabaseItem createAsNewItem(DatabaseItem owner,bool save = true);
+		DatabaseItem createAsNewItem(DatabaseItem owner,string newName,bool save = true);
 		bool isValid{get;}
 		List<UML.Classes.Kernel.Element> logicalElements {get;}
 		void Select();
 		int position {get;set;}
 		DatabaseItem derivedFromItem {get;set;}
+		string renamedName{get;set;}
 	}
 }
