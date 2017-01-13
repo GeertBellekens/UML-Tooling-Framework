@@ -57,6 +57,7 @@
     <Compile Include="DataType.cs" />
     <Compile Include="ForeignKey.cs" />
     <Compile Include="PrimaryKey.cs" />
+    <Compile Include="Index.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="Transformation\ColumnTransformer.cs" />
