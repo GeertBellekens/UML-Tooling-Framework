@@ -22,5 +22,7 @@ namespace DatabaseFramework
 
 		void addConstraint(Constraint constraint);
 		void removeConstraint(Constraint constraint);
+    
+    Constraint getConstraint(string name);
 	}
 }
