@@ -15,5 +15,6 @@ namespace DatabaseFramework
 		void addTable(Table table);
 		void removeTable(Table table);
 		Table getCorrespondingTable(Table externalTable);
+    Table getTable(string name);
 	}
 }
