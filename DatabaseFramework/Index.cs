@@ -7,7 +7,9 @@ namespace DatabaseFramework
 	/// <summary>
 	/// Description of Index.
 	/// </summary>
-	public interface Index:Constraint
+	public interface Index : Constraint
 	{
+    	bool isUnique    { get; set; }
+    	bool isClustered { get; set; }
 	}
 }
