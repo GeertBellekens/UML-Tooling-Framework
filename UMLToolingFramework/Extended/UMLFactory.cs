@@ -54,7 +54,6 @@ namespace TSF.UmlToolingFramework.UML.Extended {
       this.model = model;
       UMLFactory.addFactory(model, this);
     }
-    public abstract UML.Classes.Kernel.ValueSpecification createValueSpecification(object objectToWrap);
     /// creates a new UML element based on the given object to wrap
     public abstract UML.Classes.Kernel.Element createElement
       (Object objectToWrap);
