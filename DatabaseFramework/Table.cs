@@ -14,6 +14,7 @@ namespace DatabaseFramework
 		List<Constraint> constraints {get;set;}
 		PrimaryKey primaryKey {get;set;}
 		List<ForeignKey> foreignKeys{get;set;}
+		string tableSpace{get;set;}
 		bool isAbstract{get;}
 
 		void addColumn(Column column);
