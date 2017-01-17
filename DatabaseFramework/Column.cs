@@ -14,5 +14,6 @@ namespace DatabaseFramework
 		int position{get;set;}
 		bool isRemote{get;}
 		bool isRenamed {get;set;}
+		string initialValue {get;set;}
 	}
 }

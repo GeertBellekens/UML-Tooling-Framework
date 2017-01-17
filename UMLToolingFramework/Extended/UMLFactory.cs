@@ -418,5 +418,8 @@ namespace TSF.UmlToolingFramework.UML.Extended {
 	}
 	
 	public abstract UML.Profiles.TaggedValue createTaggedValue (object objectToWrap);
+	public abstract UML.Classes.Kernel.ValueSpecification createValueSpecification(object objectToWrap);
+	public abstract UML.Classes.Kernel.ValueSpecification createValueSpecificationFromString(string stringRepresentation);
+
   }
 }
