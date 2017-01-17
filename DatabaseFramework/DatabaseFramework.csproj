@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDataType.cs" />
+    <Compile Include="CheckConstraint.cs" />
     <Compile Include="Column.cs" />
     <Compile Include="Compare\DatabaseComparer.cs" />
     <Compile Include="Compare\DatabaseComparisonStatusEnum.cs" />
