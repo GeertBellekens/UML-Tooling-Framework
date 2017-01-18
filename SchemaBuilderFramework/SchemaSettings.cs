@@ -20,6 +20,10 @@ namespace SchemaBuilderFramework
 		/// </summary>
 		List<string> ignoredTaggedValues{get;set;}
 		/// <summary>
+		/// indicates whether we need to copy the generalizations for classes
+		/// </summary>
+		bool copyGeneralizations {get;set;}
+		/// <summary>
 		/// indicates if we need to copy the datatypes to the subset
 		/// </summary>
 		bool copyDataTypes {get;set;}
