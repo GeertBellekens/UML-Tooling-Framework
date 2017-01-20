@@ -29,6 +29,12 @@ namespace SchemaBuilderFramework
 	    void updateSubsetModel(UML.Classes.Kernel.Classifier messageElement);
 		
 	    /// <summary>
+	    /// updates the subset model linked to given messageElement
+	    /// </summary>
+	    /// <param name="destinationPackage">the package to create the subset in</param>
+	    void updateSubsetModel(Package destinationPackage);
+	    
+	    /// <summary>
 	    /// the settings this schema has to work with
 	    /// </summary>
 	    SchemaSettings settings {get;set;}

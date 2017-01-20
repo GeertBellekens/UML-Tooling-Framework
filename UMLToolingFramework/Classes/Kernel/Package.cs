@@ -10,5 +10,7 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     void exportToXMI(string filePath);
     Package getRootPackage();
     void refresh();
+    HashSet<Package> getNestedPackageTree(bool includeThis);
+	HashSet<Element> getAllOwnedElements();
 	}
 }

@@ -18,5 +18,7 @@ namespace SchemaBuilderFramework
 		HashSet<SchemaAssociation> schemaAssociations {get;set;}
 		HashSet<SchemaLiteral> schemaLiterals {get;set;}
 		UML.Classes.Kernel.Classifier createSubsetElement(UML.Classes.Kernel.Package destinationPackage);
+		bool isShared {get;}
+		
 	}
 }
