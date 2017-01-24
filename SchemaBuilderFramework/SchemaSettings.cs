@@ -63,5 +63,9 @@ namespace SchemaBuilderFramework
 		/// the output name to use
 		/// </summary>
 		string outputName {get;set;}
+		/// <summary>
+		/// delete subset elements that are not used?
+		/// </summary>
+		bool deleteUnusedSchemaElements {get;set;}
 	}
 }
