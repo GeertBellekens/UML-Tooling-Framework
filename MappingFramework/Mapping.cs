@@ -12,5 +12,6 @@ namespace MappingFramework
 		MappingEnd source {get;set;}
 		MappingEnd target {get;set;}
 		MappingLogic mappingLogic {get;set;}
+		void save();
 	}
 }

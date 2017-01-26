@@ -11,5 +11,6 @@ namespace MappingFramework
 	{
 		string name {get;set;}
 		List<Mapping> mappings {get;set;}
+		void addMapping(Mapping mapping);
 	}
 }
