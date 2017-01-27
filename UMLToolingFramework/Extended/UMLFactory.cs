@@ -81,7 +81,82 @@ namespace TSF.UmlToolingFramework.UML.Extended {
     public abstract T createNewElement<T>(UML.Classes.Kernel.Element owner, 
                                           String name) 
       where T : class, UML.Classes.Kernel.Element;
-
+    public UML.Classes.Kernel.Element createNewElement(UML.Classes.Kernel.Element owner, string name, string UMLType)
+    { 
+    	switch (UMLType)
+    	{
+    		case "Action":
+    			return createNewElement<UML.Actions.BasicActions.Action>(owner,name);
+    		case "CallBehaviorAction":
+    			return createNewElement<UML.Actions.BasicActions.CallBehaviorAction>(owner,name);
+    		case "CallOperationAction":
+    			return createNewElement<UML.Actions.BasicActions.CallOperationAction>(owner,name);
+    		case "Activity":
+    			return createNewElement<UML.Activities.FundamentalActivities.Activity>(owner,name);
+			case "AssociationClass":
+    			return createNewElement<UML.Classes.AssociationClasses.AssociationClass>(owner,name);
+    		case "Abstraction":
+    			return createNewElement<UML.Classes.Dependencies.Abstraction>(owner,name);
+    		case "Dependency":
+    			return createNewElement<UML.Classes.Dependencies.Dependency>(owner,name);
+    		case "Realization":
+    			return createNewElement<UML.Classes.Dependencies.Realization>(owner,name);
+    		case "Usage":
+    			return createNewElement<UML.Classes.Dependencies.Usage>(owner,name);
+    		case "Interface":
+    			return createNewElement<UML.Classes.Interfaces.Interface>(owner,name);
+    		case "Association":
+    			return createNewElement<UML.Classes.Kernel.Association>(owner,name);
+    		case "Class":
+    			return createNewElement<UML.Classes.Kernel.Class>(owner,name);
+    		case "Comment":
+    			return createNewElement<UML.Classes.Kernel.Comment>(owner,name);
+    		case "Constraint":
+    			return createNewElement<UML.Classes.Kernel.Constraint>(owner,name);
+    		case "DataType":
+    			return createNewElement<UML.Classes.Kernel.DataType>(owner,name);
+    		case "Enumeration":
+    			return createNewElement<UML.Classes.Kernel.Enumeration>(owner,name);
+    		case "EnumerationLiteral":
+    			return createNewElement<UML.Classes.Kernel.EnumerationLiteral>(owner,name);
+    	 	case "Generalization":
+    			return createNewElement<UML.Classes.Kernel.Generalization>(owner,name);
+    		case "LiteralBoolean":
+    			return createNewElement<UML.Classes.Kernel.LiteralBoolean>(owner,name);
+			case "LiteralInteger":
+    			return createNewElement<UML.Classes.Kernel.LiteralInteger>(owner,name);
+			case "LiteralNull":
+    			return createNewElement<UML.Classes.Kernel.LiteralNull>(owner,name);
+			case "LiteralString":
+    			return createNewElement<UML.Classes.Kernel.LiteralString>(owner,name);
+			case "LiteralUnlimitedNatural":
+    			return createNewElement<UML.Classes.Kernel.LiteralUnlimitedNatural>(owner,name);
+			case "Operation":
+    			return createNewElement<UML.Classes.Kernel.Operation>(owner,name);		
+			case "Package":
+    			return createNewElement<UML.Classes.Kernel.Package>(owner,name);
+			case "Parameter":
+    			return createNewElement<UML.Classes.Kernel.Parameter>(owner,name);
+    		case "PrimitiveType":
+    			return createNewElement<UML.Classes.Kernel.PrimitiveType>(owner,name);
+    		case "Property":
+    			return createNewElement<UML.Classes.Kernel.Property>(owner,name);
+    		case "InformationFlow":
+    			return createNewElement<UML.InfomationFlows.InformationFlow>(owner,name);
+			case "InformationItem":
+    			return createNewElement<UML.InfomationFlows.InformationItem>(owner,name);	
+			case "Lifeline":
+    			return createNewElement<UML.Interactions.BasicInteractions.Lifeline>(owner,name);
+			case "Message":
+    			return createNewElement<UML.Interactions.BasicInteractions.Message>(owner,name);
+			case "Stereotype":
+    			return createNewElement<UML.Profiles.Stereotype>(owner,name);    			
+    		default:
+    			return createNewElement<UML.Classes.Kernel.Class>(owner,name);    		
+    	}
+    	
+    }
+    
     public abstract UML.Profiles.Stereotype createStereotype
       (UML.Classes.Kernel.Element owner, String name);
 

@@ -1,6 +1,6 @@
 ﻿
 using System;
-
+using UML=TSF.UmlToolingFramework.UML;
 namespace MappingFramework
 {
 	/// <summary>
@@ -9,5 +9,6 @@ namespace MappingFramework
 	public interface MappingLogic
 	{
 		string description {get;set;}
+		UML.Classes.Kernel.Element mappingElement{get;set;}
 	}
 }
