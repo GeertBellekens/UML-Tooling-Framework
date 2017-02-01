@@ -12,5 +12,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     void refresh();
     HashSet<Package> getNestedPackageTree(bool includeThis);
 	HashSet<Element> getAllOwnedElements();
+	bool isEmpty{get;}
 	}
 }
