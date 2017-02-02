@@ -67,5 +67,9 @@ namespace SchemaBuilderFramework
 		/// delete subset elements that are not used?
 		/// </summary>
 		bool deleteUnusedSchemaElements {get;set;}
+		/// <summary>
+		/// base the subset on package structure only and not by following the relations of a message element
+		/// </summary>
+		bool usePackageSchemasOnly {get;set;}
 	}
 }
