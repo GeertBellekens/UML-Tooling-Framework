@@ -71,5 +71,9 @@ namespace SchemaBuilderFramework
 		/// base the subset on package structure only and not by following the relations of a message element
 		/// </summary>
 		bool usePackageSchemasOnly {get;set;}
+		/// <summary>
+		/// list of types or stereotypes that should not be added on diagrams
+		/// </summary>
+		List<string> hiddenElementTypes{get;set;}
 	}
 }
