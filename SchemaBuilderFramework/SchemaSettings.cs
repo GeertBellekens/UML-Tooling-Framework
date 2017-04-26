@@ -75,5 +75,13 @@ namespace SchemaBuilderFramework
 		/// list of types or stereotypes that should not be added on diagrams
 		/// </summary>
 		List<string> hiddenElementTypes{get;set;}
+		/// <summary>
+		/// indicates if we need to limit the datatypes to copy to only the given subset
+		/// </summary>
+		bool dontCreateAttributeDependencies {get;set;}
+		/// <summary>
+		/// indicates if we need to limit the datatypes to copy to only the given subset
+		/// </summary>
+		bool orderAssociationsAlphabetically {get;set;}
 	}
 }
