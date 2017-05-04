@@ -76,12 +76,16 @@ namespace SchemaBuilderFramework
 		/// </summary>
 		List<string> hiddenElementTypes{get;set;}
 		/// <summary>
-		/// indicates if we need to limit the datatypes to copy to only the given subset
+		/// do not create attribute dependencies
 		/// </summary>
 		bool dontCreateAttributeDependencies {get;set;}
 		/// <summary>
-		/// indicates if we need to limit the datatypes to copy to only the given subset
+		/// orer the associations alphabetically
 		/// </summary>
 		bool orderAssociationsAlphabetically {get;set;}
+		/// <summary>
+		/// associations and attributes are ordered alphabetically amongst each other
+		/// </summary>
+		bool orderAssociationsAmongstAttributes {get;set;}
 	}
 }
