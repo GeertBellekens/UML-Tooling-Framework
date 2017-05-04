@@ -57,6 +57,9 @@ namespace TSF.UmlToolingFramework.UML.Extended {
     /// creates a new UML element based on the given object to wrap
     public abstract UML.Classes.Kernel.Element createElement
       (Object objectToWrap);
+    //create a new UML element based on the given object within the given owner
+    public abstract UML.Classes.Kernel.Element createElement
+      (Object objectToWrap, UML.Classes.Kernel.Element owner);
 
     /// creates a new PrimitiveType based on the given object to wrap
     public abstract UML.Classes.Kernel.PrimitiveType createPrimitiveType
@@ -73,6 +76,18 @@ namespace TSF.UmlToolingFramework.UML.Extended {
         new List<UML.Classes.Kernel.Element>();
       foreach (Object objectToWrap in objectsToWrap) {
         elements.Add(this.createElement(objectToWrap));
+      }
+      return elements;
+    }
+    /// returns a collection of Elements based on the collection of objects to
+    /// wrap all within the given owner object
+    public ICollection<UML.Classes.Kernel.Element> createElements
+      (IEnumerable objectsToWrap, UML.Classes.Kernel.Element owner) 
+    {
+      List<UML.Classes.Kernel.Element> elements = new List<UML.Classes.Kernel.Element>();
+      foreach (Object objectToWrap in objectsToWrap) 
+      {
+        elements.Add(this.createElement(objectToWrap, owner));
       }
       return elements;
     }
