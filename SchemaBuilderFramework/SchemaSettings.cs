@@ -87,5 +87,15 @@ namespace SchemaBuilderFramework
 		/// associations and attributes are ordered alphabetically amongst each other
 		/// </summary>
 		bool orderAssociationsAmongstAttributes {get;set;}
+		/// <summary>
+		/// use tagged value instead of trace to link elements of subsets to their source element
+		/// </summary>
+		bool tvInsteadOfTrace {get;set;}
+		/// <summary>
+		/// name of the tagged value to use instead of the trace
+		/// </summary>
+		string elementTagName {get;set;}
+		
+		
 	}
 }
