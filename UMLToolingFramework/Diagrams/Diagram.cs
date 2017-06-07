@@ -38,18 +38,26 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// </summary>
         /// <param name="itemToSelect">the item to select</param>
         void selectItem(UML.Extended.UMLItem itemToSelect);
-        /// <summary>
-        /// adds an element to the diagram
-        /// </summary>
-        /// <param name="element">the element to add</param>
+		/// <summary>
+        /// adds an element to the diagram to the given coördinates
+		/// </summary>
+		/// <param name="element">the element to add</param>
+		/// <param name="x">the x position</param>
+		/// <param name="y">th y position</param>
+		/// <param name="newHeight">the height of the new diagramElement</param>
+		/// <param name="newWidth">the width of the new diagramElement</param>
         /// <returns>the new diagramElement</returns>
-        DiagramElement addToDiagram(UML.Classes.Kernel.Element element);
-        /// <summary>
-        /// add the given diagram to this diagram
-        /// </summary>
-        /// <param name="diagram">the diagram to add</param>
-        /// <returns>the new DiagramElement</returns>
-        DiagramElement addToDiagram(UML.Diagrams.Diagram diagram);
+        DiagramElement addToDiagram(UML.Classes.Kernel.Element element,int x = 0,int y = 0, int newHeight=0, int newWidth=0);
+		/// <summary>
+		/// add the given diagram to this diagram
+		/// </summary>
+		/// <param name="diagram">the diagram to add</param>
+		/// <param name="x">the x position</param>
+		/// <param name="y">th y position</param>
+		/// <param name="newHeight">the height of the new diagramElement</param>
+		/// <param name="newWidth">the width of the new diagramElement</param>
+		/// <returns>the diagramElement representing the diagram</returns>
+        DiagramElement addToDiagram(UML.Diagrams.Diagram diagram,int x = 0,int y = 0, int newHeight=0, int newWidth=0);
         /// <summary>
         /// Automaticaly layouts the diagram so it looks nice
         /// </summary>
