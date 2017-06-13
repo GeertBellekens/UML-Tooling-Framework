@@ -7,5 +7,6 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
     int                        xPosition { get; set; }
     int                        yPosition { get; set; }
     UML.Diagrams.Diagram diagram {get;}
+    void setOrientation(bool vertical);
   }
 }
