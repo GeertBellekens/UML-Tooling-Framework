@@ -13,7 +13,8 @@ namespace DatabaseFramework.Transformation
 	public interface ForeignKeyTransformer:DatabaseItemTransformer
 	{
 		DB.ForeignKey foreignKey {get;set;}
-		UML.Classes.Kernel.Association logicalAssociation {get;set;}
+		UML.Classes.Kernel.Association logicalAssociation {get;}
+		UML.Classes.Kernel.Property logicalAssociationEnd {get;set;}
 		void resetName();
 
 	}
