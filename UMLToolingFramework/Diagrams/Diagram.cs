@@ -72,7 +72,11 @@ namespace TSF.UmlToolingFramework.UML.Diagrams {
         /// refreshes the diagram to show any new changes
         /// </summary>
         void reFresh();
-
-        
+	
+        /// <summary>
+        /// saves the image of this diagram to the given folder as png
+        /// </summary>
+        /// <param name="imagePath">path where to save the file</param>
+		void saveImageToFile(string imagePath);
   }
 }

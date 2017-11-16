@@ -15,6 +15,7 @@ namespace DatabaseFramework
 		PrimaryKey primaryKey {get;set;}
 		List<ForeignKey> foreignKeys{get;set;}
 		string tableSpace{get;set;}
+		string tableOwner {get;set;}
 		bool isAbstract{get;}
 
 		void addColumn(Column column);

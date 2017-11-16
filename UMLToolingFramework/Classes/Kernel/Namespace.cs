@@ -6,5 +6,6 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 	{
 		HashSet<UML.Diagrams.Diagram> ownedDiagrams {get;set;}
 		List<UMLItem> findOwnedItems(string itemDescriptor);
+		void exportAllDiagrams(string imagePath);
 	}
 }

@@ -13,5 +13,6 @@ namespace SchemaBuilderFramework
 		UML.Classes.Kernel.Property subSetProperty {get;set;}
 		SchemaElement owner {get;set;}
 		void createSubsetProperty();
+		bool isNew {get;}
 	}
 }
