@@ -26,6 +26,7 @@ namespace DatabaseFramework
 		List<DatabaseItem> mergedEquivalents {get;set;}
 		bool isValid{get;}
 		List<UML.Classes.Kernel.Element> logicalElements {get;}
+		string logicalName{get;}
 		void Select();
 		int position {get;set;}
 		DatabaseItem derivedFromItem {get;set;}
