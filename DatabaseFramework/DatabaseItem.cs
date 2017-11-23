@@ -36,5 +36,6 @@ namespace DatabaseFramework
 		/// Thas means that this column will be realized as a physical column in the databae
 		/// </summary>
 		bool isNotRealized{get;set;}
+		bool isEqualDirty{get;set;}
 	}
 }
