@@ -67,6 +67,7 @@
     <Compile Include="Transformation\ForeignKeyTransformer.cs" />
     <Compile Include="Transformation\PrimaryKeyTransformer.cs" />
     <Compile Include="Transformation\TableTransformer.cs" />
+    <Compile Include="View.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Compare" />
