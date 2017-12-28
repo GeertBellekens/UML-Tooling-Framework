@@ -41,5 +41,11 @@ namespace TSF.UmlToolingFramework.UML.Extended {
 	/// </summary>
 	/// <returns>the root package for the currently selecte item</returns>
 	UML.Classes.Kernel.Package getCurrentRootPackage();
+	/// <summary>
+	/// returns the item corresponding to the given Unique ID
+	/// </summary>
+	/// <param name="guidString">the unique id of the item</param>
+	/// <returns>the item corresponding to the unique ID</returns>
+	UML.Extended.UMLItem getItemFromGUID(string guidString);
   }
 }

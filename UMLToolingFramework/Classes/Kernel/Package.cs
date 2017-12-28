@@ -7,8 +7,7 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
     HashSet<Package>      nestedPackages { get; set; }
     Package               nestingPackage { get; set; }
     HashSet<PackageMerge> packageMerges  { get; set; }
-    void exportToXMI(string filePath);
-	
+    void exportToXMI(string filePath, bool includeDiagrams);
     Package getRootPackage();
     void refresh();
     HashSet<Package> getNestedPackageTree(bool includeThis);
