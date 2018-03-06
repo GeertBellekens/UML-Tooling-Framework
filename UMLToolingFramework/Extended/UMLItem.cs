@@ -24,11 +24,12 @@ namespace TSF.UmlToolingFramework.UML.Extended
 		/// the owner of the item
 		/// </summary>
 		UML.Classes.Kernel.Element owner {get;set;}
-		/// <summary>
-		/// the fully qualified name of the item.
-		/// contains the full node path from the root of the model to this item.
-		/// </summary>
-		string fqn {get;}
+        List<UML.Classes.Kernel.Element> getAllOwners();
+        /// <summary>
+        /// the fully qualified name of the item.
+        /// contains the full node path from the root of the model to this item.
+        /// </summary>
+        string fqn {get;}
 		/// <summary>
 		/// returns the unique ID of this item.
 		/// </summary>
