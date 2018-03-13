@@ -10,5 +10,6 @@ namespace DatabaseFramework
 	{
 		bool hasLength {get;set;}
 		bool hasPrecision {get;set;}
-	}
+        string databaseProduct { get; }
+    }
 }
