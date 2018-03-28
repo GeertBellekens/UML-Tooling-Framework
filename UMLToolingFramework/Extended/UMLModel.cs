@@ -43,7 +43,7 @@ namespace TSF.UmlToolingFramework.UML.Extended
         /// <param name="allowedTypes">the subtypes of UML.Classes.Kernel.Element that should be used as a filter</param>
         /// <returns>the selected element</returns>
         /// <param name = "allowedStereotypes"> the list of stereotypes to filter on</param>
-        UML.Classes.Kernel.Element getUserSelectedElement(List<string> allowedTypes, List<string> allowedStereotypes);
+        UML.Classes.Kernel.Element getUserSelectedElement(List<string> allowedTypes, List<string> allowedStereotypes, string defaultSelectionID = null);
         /// <summary>
         /// selects the root package for the currently selected item
         /// </summary>
