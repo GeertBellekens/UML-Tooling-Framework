@@ -20,13 +20,13 @@ namespace SchemaBuilderFramework
 	    /// creates a subset of the source model with only the properties and associations used in this schema
 	    /// </summary>
 	    /// <param name="destinationPackage">the package to create the subset in</param>
-	    void createSubsetModel(UML.Classes.Kernel.Package destinationPackage);
+	    void createSubsetModel(Package destinationPackage);
 
 	    /// <summary>
 	    /// updates the subset model linked to given messageElement
 	    /// </summary>
 	    /// <param name="messageElement">The message element that is the root for the message subset model</param>
-	    void updateSubsetModel(UML.Classes.Kernel.Classifier messageElement);
+	    void updateSubsetModel(Classifier messageElement);
 		
 	    /// <summary>
 	    /// updates the subset model linked to given messageElement
@@ -43,5 +43,10 @@ namespace SchemaBuilderFramework
 	    /// the name of the schema
 	    /// </summary>
 	    string name {get;}
+
+        /// <summary>
+        /// the UML element containing the schema
+        /// </summary>
+        PackageableElement containerElement { get; set; }
 	}
 }

@@ -41,7 +41,7 @@ namespace TSF.UmlToolingFramework.UML.Extended
 		/// <summary>
 		/// the stereotypes on this element
 		/// </summary>
-		HashSet<UML.Profiles.Stereotype> stereotypes{get;}
+		HashSet<UML.Profiles.Stereotype> stereotypes{ get; set; }
 		/// <summary>
 		/// add this element to the currently opened diagram
 		/// </summary>
