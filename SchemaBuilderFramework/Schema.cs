@@ -20,7 +20,7 @@ namespace SchemaBuilderFramework
 	    /// creates a subset of the source model with only the properties and associations used in this schema
 	    /// </summary>
 	    /// <param name="destinationPackage">the package to create the subset in</param>
-	    void createSubsetModel(Package destinationPackage);
+	    void createSubsetModel(Package destinationPackage, HashSet<SchemaElement> elements);
 
 	    /// <summary>
 	    /// updates the subset model linked to given messageElement
