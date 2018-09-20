@@ -9,7 +9,8 @@ namespace MappingFramework
 	/// </summary>
 	public interface MappingSet
 	{
-		string name {get;set;}
+        MappingModel source { get; set; }
+        MappingModel target { get; set; }
 		List<Mapping> mappings {get;set;}
 		void addMapping(Mapping mapping);
 	}

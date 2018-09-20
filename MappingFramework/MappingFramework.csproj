@@ -50,6 +50,8 @@
     <Compile Include="Mapping.cs" />
     <Compile Include="MappingEnd.cs" />
     <Compile Include="MappingLogic.cs" />
+    <Compile Include="MappingModel.cs" />
+    <Compile Include="MappingNode.cs" />
     <Compile Include="MappingSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
