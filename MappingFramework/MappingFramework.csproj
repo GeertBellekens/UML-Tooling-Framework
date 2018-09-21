@@ -45,12 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssociationMappingEnd.cs" />
-    <Compile Include="AttributeMappingEnd.cs" />
     <Compile Include="Mapping.cs" />
-    <Compile Include="MappingEnd.cs" />
     <Compile Include="MappingLogic.cs" />
-    <Compile Include="MappingModel.cs" />
     <Compile Include="MappingNode.cs" />
     <Compile Include="MappingSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

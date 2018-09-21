@@ -9,9 +9,9 @@ namespace MappingFramework
 	/// </summary>
 	public interface MappingSet
 	{
-        MappingModel source { get; set; }
-        MappingModel target { get; set; }
-		List<Mapping> mappings {get;set;}
+        MappingNode source { get; set; }
+        MappingNode target { get; set; }
+		IEnumerable<Mapping> mappings {get;set;}
 		void addMapping(Mapping mapping);
 	}
 }

@@ -13,5 +13,8 @@ namespace MappingFramework
         UML.Classes.Kernel.NamedElement source { get; set; }
         IEnumerable<MappingNode> childNodes { get; set; }
         MappingNode parent { get; set; }
+        IEnumerable<Mapping> getMappings(MappingNode targetRootNode);
+        void addChildNode(MappingNode childNode);
+
     }
 }

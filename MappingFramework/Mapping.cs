@@ -9,8 +9,8 @@ namespace MappingFramework
 	/// </summary>
 	public interface Mapping
 	{
-		MappingEnd source {get;set;}
-		MappingEnd target {get;set;}
+		MappingNode source {get;set;}
+        MappingNode target {get;set;}
 		MappingLogic mappingLogic {get;set;}
 		void save();
 	}
