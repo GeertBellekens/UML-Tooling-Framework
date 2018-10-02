@@ -49,6 +49,7 @@
     <Compile Include="MappingLogic.cs" />
     <Compile Include="MappingNode.cs" />
     <Compile Include="MappingSet.cs" />
+    <Compile Include="ModelStructure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
