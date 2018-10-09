@@ -23,5 +23,6 @@ namespace MappingFramework
         IEnumerable<Mapping> mappings { get; }
         void addMapping(Mapping mapping);
         void setChildNodes();
+        Mapping mapTo(MappingNode targetNode);
     }
 }
