@@ -12,6 +12,7 @@ namespace MappingFramework
 		MappingNode source {get;set;}
         MappingNode target {get;set;}
 		MappingLogic mappingLogic {get;set;}
+        string mappingLogicDescription { get; set; }
 		void save();
 	}
 }
