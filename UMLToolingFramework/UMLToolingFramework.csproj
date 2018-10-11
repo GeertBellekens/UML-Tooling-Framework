@@ -49,6 +49,9 @@
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -234,30 +237,6 @@
     <Compile Include="StateMachines\BehaviorStateMachines\TransitionKind.cs" />
     <Compile Include="StateMachines\BehaviorStateMachines\Vertex.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Actions" />
-    <Folder Include="Actions\BasicActions" />
-    <Folder Include="Activities" />
-    <Folder Include="Activities\FundamentalActivities" />
-    <Folder Include="Classes" />
-    <Folder Include="Classes\Dependencies" />
-    <Folder Include="Classes\Interfaces" />
-    <Folder Include="Classes\Kernel" />
-    <Folder Include="Classes\AssociationClasses" />
-    <Folder Include="CommonBehaviors" />
-    <Folder Include="CommonBehaviors\BasicBehaviors" />
-    <Folder Include="CommonBehaviors\Communications" />
-    <Folder Include="CompositeStructures" />
-    <Folder Include="CompositeStructures\InternalStructures" />
-    <Folder Include="Diagrams" />
-    <Folder Include="Interactions" />
-    <Folder Include="Interactions\BasicInteractions" />
-    <Folder Include="Interactions\Fragments" />
-    <Folder Include="InfomationFlows" />
-    <Folder Include="Extended" />
-    <Folder Include="Profiles" />
-    <Folder Include="StateMachines" />
-    <Folder Include="StateMachines\BehaviorStateMachines" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>
