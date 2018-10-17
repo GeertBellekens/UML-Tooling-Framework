@@ -14,5 +14,6 @@ namespace MappingFramework
 		MappingLogic mappingLogic {get;set;}
         string mappingLogicDescription { get; set; }
 		void save();
-	}
+        void delete();
+    }
 }

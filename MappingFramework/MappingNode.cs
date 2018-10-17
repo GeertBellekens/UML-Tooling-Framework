@@ -22,7 +22,9 @@ namespace MappingFramework
         void addChildNode(MappingNode childNode);
         IEnumerable<Mapping> mappings { get; }
         void addMapping(Mapping mapping);
+        void removeMapping(Mapping mapping);
         void setChildNodes();
         Mapping mapTo(MappingNode targetNode);
+        
     }
 }
