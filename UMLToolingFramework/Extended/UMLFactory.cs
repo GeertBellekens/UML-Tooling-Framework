@@ -545,12 +545,12 @@ namespace TSF.UmlToolingFramework.UML.Extended
         public abstract UML.Diagrams.DiagramElement createNewDiagramElement
             (UML.Diagrams.Diagram owner, UML.Classes.Kernel.Element element);
 
-        public virtual ICollection<UML.Profiles.TaggedValue> createTaggedValues(IEnumerable taggedValuesToWrap)
+        public virtual ICollection<UML.Profiles.TaggedValue> createTaggedValues(UML.Classes.Kernel.Element owner, IEnumerable taggedValuesToWrap)
         {
             List<UML.Profiles.TaggedValue> taggedValues = new List<UML.Profiles.TaggedValue>();
             foreach (object tagToWrap in taggedValuesToWrap)
             {
-                UML.Profiles.TaggedValue taggedValue = this.createTaggedValue(tagToWrap);
+                UML.Profiles.TaggedValue taggedValue = this.createTaggedValue(owner, tagToWrap);
                 if (taggedValue != null)
                 {
                     taggedValues.Add(taggedValue);
@@ -559,7 +559,7 @@ namespace TSF.UmlToolingFramework.UML.Extended
             return taggedValues;
         }
 
-        public abstract UML.Profiles.TaggedValue createTaggedValue(object objectToWrap);
+        public abstract UML.Profiles.TaggedValue createTaggedValue(UML.Classes.Kernel.Element owner, object objectToWrap);
         public abstract UML.Classes.Kernel.ValueSpecification createValueSpecification(object objectToWrap);
         public abstract UML.Classes.Kernel.ValueSpecification createValueSpecificationFromString(string stringRepresentation);
 

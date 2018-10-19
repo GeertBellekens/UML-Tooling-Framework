@@ -25,6 +25,7 @@ namespace MappingFramework
         void removeMapping(Mapping mapping);
         void setChildNodes();
         Mapping mapTo(MappingNode targetNode);
+        bool isChildOf(MappingNode parentNode);
         
     }
 }
