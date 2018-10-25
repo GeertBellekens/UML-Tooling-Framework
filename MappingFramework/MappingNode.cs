@@ -12,6 +12,8 @@ namespace MappingFramework
         string name { get; }
         ModelStructure structure { get; set; }
         UML.Classes.Kernel.NamedElement source { get; set; }
+        UML.Classes.Kernel.NamedElement virtualOwner { get; set; }
+        bool isVirtual { get; }
         IEnumerable<MappingNode> childNodes { get; }
         IEnumerable<MappingNode> mappedChildNodes { get; }
         IEnumerable<MappingNode> allChildNodes { get; }
@@ -26,6 +28,7 @@ namespace MappingFramework
         void setChildNodes();
         Mapping mapTo(MappingNode targetNode);
         bool isChildOf(MappingNode parentNode);
+        bool isChildOf(string uniqueID);
         
     }
 }
