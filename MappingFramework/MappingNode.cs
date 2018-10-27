@@ -29,6 +29,7 @@ namespace MappingFramework
         Mapping mapTo(MappingNode targetNode);
         bool isChildOf(MappingNode parentNode);
         bool isChildOf(string uniqueID);
+        Mapping createEmptyMapping(MappingNode targetRootNode);
         
     }
 }

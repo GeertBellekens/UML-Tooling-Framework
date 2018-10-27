@@ -13,7 +13,9 @@ namespace MappingFramework
         MappingNode target {get;set;}
 		MappingLogic mappingLogic {get;set;}
         string mappingLogicDescription { get; set; }
-		void save();
+        bool isEmpty { get; set; }
+
+        void save();
         void delete();
     }
 }
