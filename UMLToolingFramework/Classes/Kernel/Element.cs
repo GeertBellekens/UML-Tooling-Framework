@@ -10,7 +10,7 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
         /// convenience property to get all relationships that are linked to this
         /// Element not defined in UML spec.
         List<Relationship> relationships { get; set; }
-        List<T> getRelationships<T>() where T : Relationship;
+        List<T> getRelationships<T>(bool outgoing = true, bool incoming = true) where T : Relationship;
         HashSet<T> getUsingDiagrams<T>() where T : class,UML.Diagrams.Diagram;
         UML.Extended.UMLItem getItemFromRelativePath(List<string> relativePath);
         HashSet<UML.Profiles.TaggedValue> taggedValues{get;set;}
