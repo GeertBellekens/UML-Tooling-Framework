@@ -14,6 +14,7 @@ namespace MappingFramework
 		MappingLogic mappingLogic {get;set;}
         string mappingLogicDescription { get; set; }
         bool isEmpty { get; set; }
+        bool isReadOnly { get; }
 
         void save();
         void delete();

@@ -10,6 +10,7 @@ namespace MappingFramework
     public interface MappingNode
     {
         string name { get; }
+        string displayName { get; }
         ModelStructure structure { get; set; }
         UML.Classes.Kernel.NamedElement source { get; set; }
         UML.Classes.Kernel.NamedElement virtualOwner { get; set; }
@@ -30,6 +31,7 @@ namespace MappingFramework
         bool isChildOf(MappingNode parentNode);
         bool isChildOf(string uniqueID);
         Mapping createEmptyMapping(MappingNode targetRootNode);
-        
+        MappingNode findNode(List<string> mappingPathNames);
+        bool isReadOnly { get; }
     }
 }

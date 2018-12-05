@@ -10,5 +10,6 @@ namespace MappingFramework
 	{
 		string description {get;set;}
 		UML.Classes.Kernel.Element mappingElement{get;set;}
-	}
+        void delete();
+    }
 }
