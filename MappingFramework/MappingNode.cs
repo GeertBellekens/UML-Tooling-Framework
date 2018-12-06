@@ -33,5 +33,6 @@ namespace MappingFramework
         Mapping createEmptyMapping(MappingNode targetRootNode);
         MappingNode findNode(List<string> mappingPathNames);
         bool isReadOnly { get; }
+        MappingSet mappingSet { get; set;}
     }
 }
