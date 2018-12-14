@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using UML=TSF.UmlToolingFramework.UML;
 
 namespace MappingFramework
@@ -11,8 +12,10 @@ namespace MappingFramework
 	{
 		MappingNode source {get;set;}
         MappingNode target {get;set;}
-		MappingLogic mappingLogic {get;set;}
-        string mappingLogicDescription { get; set; }
+		IEnumerable<MappingLogic> mappingLogics { get; set; }
+        void addMappingLogic(MappingLogic mappingLogic);
+        void removeMappingLogic(MappingLogic mappingLogic);
+        string defaultMappingLogicDescription { get; set; }
         bool isEmpty { get; set; }
         bool isReadOnly { get; }
 
