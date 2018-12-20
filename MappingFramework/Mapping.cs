@@ -15,7 +15,6 @@ namespace MappingFramework
 		IEnumerable<MappingLogic> mappingLogics { get; set; }
         void addMappingLogic(MappingLogic mappingLogic);
         void removeMappingLogic(MappingLogic mappingLogic);
-        string defaultMappingLogicDescription { get; set; }
         bool isEmpty { get; set; }
         bool isReadOnly { get; }
 

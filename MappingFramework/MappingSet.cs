@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using UML = TSF.UmlToolingFramework.UML;
 
 namespace MappingFramework
 {
@@ -13,5 +14,6 @@ namespace MappingFramework
         MappingNode target { get; set; }
 		IEnumerable<Mapping> mappings {get;set;}
 		void addMapping(Mapping mapping);
+        IEnumerable<UML.Classes.Kernel.NamedElement> contexts { get;}
 	}
 }
