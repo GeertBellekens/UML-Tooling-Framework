@@ -99,6 +99,10 @@ namespace SchemaBuilderFramework
         /// Indicates that the original attribute order will be kep. If false then all new attributes will be added to the end.
         /// </summary>
         bool keepOriginalAttributeOrder { get; set; }
+        /// <summary>
+        /// Indicates that the attribute order for all attributes in the subset will be set to 0
+        /// </summary>
+        bool setAttributeOrderZero { get; set; }
 
 
     }
