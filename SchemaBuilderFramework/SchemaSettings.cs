@@ -103,6 +103,10 @@ namespace SchemaBuilderFramework
         /// Indicates that the attribute order for all attributes in the subset will be set to 0
         /// </summary>
         bool setAttributeOrderZero { get; set; }
+        /// <summary>
+        /// Associations to an XmlChoice element will be ordered before any attributes
+        /// </summary>
+        bool orderXmlChoiceBeforeAttributes { get; set; }
 
 
     }
