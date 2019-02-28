@@ -34,5 +34,6 @@ namespace MappingFramework
         MappingNode findNode(List<string> mappingPathNames);
         bool isReadOnly { get; }
         MappingSet mappingSet { get; set;}
+        string getMappingPathString();
     }
 }
