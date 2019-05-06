@@ -16,6 +16,7 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
         HashSet<UML.Profiles.TaggedValue> taggedValues{get;set;}
         HashSet<UML.Profiles.TaggedValue> getReferencingTaggedValues();
         UML.Diagrams.Diagram compositeDiagram {get;set;}
+        HashSet<Constraint> constraints { get; set; }
        	/// <summary>
 	    /// indicates the position of this element in the set of elements owned by the owner
 	    /// </summary>
