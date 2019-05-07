@@ -107,7 +107,10 @@ namespace SchemaBuilderFramework
         /// Associations to an XmlChoice element will be ordered before any attributes
         /// </summary>
         bool orderXmlChoiceBeforeAttributes { get; set; }
-
+        /// <summary>
+        /// keeps the notes of the subset in sync with the notes of the source model
+        /// </summary>
+        bool keepNotesInSync { get; set; }
 
     }
 }
