@@ -16,6 +16,7 @@ namespace MappingFramework
         void addMappingLogic(MappingLogic mappingLogic);
         void removeMappingLogic(MappingLogic mappingLogic);
         bool isEmpty { get; set; }
+        bool isReverseEmpty { get; set; }
         bool isReadOnly { get; }
 
         void save();

@@ -30,10 +30,11 @@ namespace MappingFramework
         Mapping mapTo(MappingNode targetNode);
         bool isChildOf(MappingNode parentNode);
         bool isChildOf(string uniqueID);
-        Mapping createEmptyMapping();
+        Mapping createEmptyMapping(bool reverse);
         MappingNode findNode(List<string> mappingPathNames);
         bool isReadOnly { get; }
         MappingSet mappingSet { get; set;}
         string getMappingPathString();
+        bool isTarget { get; set; }
     }
 }
