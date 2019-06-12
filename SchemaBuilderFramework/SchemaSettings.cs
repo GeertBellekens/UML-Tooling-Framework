@@ -20,6 +20,10 @@ namespace SchemaBuilderFramework
         /// </summary>
         List<string> ignoredTaggedValues { get; set; }
         /// <summary>
+        /// list of constraint types to ignore when updating constraints
+        /// </summary>
+        List<string> ignoredConstraintTypes { get; set; }
+        /// <summary>
         /// indicates whether we need to copy the generalizations for classes
         /// </summary>
         bool copyGeneralizations { get; set; }
@@ -111,6 +115,10 @@ namespace SchemaBuilderFramework
         /// keeps the notes of the subset in sync with the notes of the source model
         /// </summary>
         bool keepNotesInSync { get; set; }
+        /// <summary>
+        /// name of the tag that will be used as the override position tag on attributes and associatons
+        /// </summary>
+        string customPositionTag { get; set; }
 
     }
 }

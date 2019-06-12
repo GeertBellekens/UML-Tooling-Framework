@@ -7,7 +7,7 @@
       set { if (value.HasValue) this._value = value.Value; }
     }
     
-    public bool isUnlimited {
+    public virtual bool isUnlimited {
       get { return this._value < 0; }
       set { if(value) { this._value = -1; } }
     }
