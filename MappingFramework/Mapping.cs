@@ -18,6 +18,7 @@ namespace MappingFramework
         bool isEmpty { get; set; }
         bool isReverseEmpty { get; set; }
         bool isReadOnly { get; }
+        MappingSet mappingSet { get; set; }
 
         void save();
         void delete();
