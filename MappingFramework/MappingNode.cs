@@ -21,8 +21,8 @@ namespace MappingFramework
         bool showAll {get;set; }
         bool isMapped { get;}
         MappingNode parent { get; set; }
-        IEnumerable<Mapping> getMappings(MappingNode targetRootNode);
-        IEnumerable<Mapping> getMyMappings(MappingNode targetRootNode);
+        IEnumerable<Mapping> getMappings();
+        IEnumerable<Mapping> getMyMappings();
         void addChildNode(MappingNode childNode);
         IEnumerable<Mapping> mappings { get; }
         void addMapping(Mapping mapping);

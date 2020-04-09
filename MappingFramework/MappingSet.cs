@@ -16,5 +16,6 @@ namespace MappingFramework
 		void addMapping(Mapping mapping);
         IEnumerable<UML.Classes.Kernel.NamedElement> contexts { get;}
         void loadAllMappings();
+        void loadMappings(UML.Classes.Kernel.NamedElement sourceElement);
 	}
 }
