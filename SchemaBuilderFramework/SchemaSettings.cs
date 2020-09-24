@@ -119,6 +119,12 @@ namespace SchemaBuilderFramework
         /// name of the tag that will be used as the override position tag on attributes and associatons
         /// </summary>
         string customPositionTag { get; set; }
-
+        /// <summary>
+        /// tagged values that will be synchronized to the subset.
+        /// To be used for refGUID tagged values that reference another part of the master model.
+        /// In the subset model the GUID will be replaced by the derived equivalent in the subset model.
+        /// If the equivalent doesn't exist, the tagged value will not be retained in the subset model.
+        /// </summary>
+        List<string> synchronizedTaggedValues { get; set; }
     }
 }
