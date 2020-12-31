@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>DatabaseFramework</RootNamespace>
     <AssemblyName>DatabaseFramework</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -69,10 +69,7 @@
     <Compile Include="Transformation\TableTransformer.cs" />
     <Compile Include="View.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Compare" />
-    <Folder Include="Transformation" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\UMLToolingFramework\UMLToolingFramework.csproj">
       <Project>{0fc55607-c9d0-442d-941c-f23ad00cb318}</Project>
