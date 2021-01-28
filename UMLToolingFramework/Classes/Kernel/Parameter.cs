@@ -7,6 +7,5 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
 		String _default { get; set; }
 		ValueSpecification defaultValue { get; set; }
     	Operation operation { get; set; }
-    	uint position { get; set; }
 	}
 }
