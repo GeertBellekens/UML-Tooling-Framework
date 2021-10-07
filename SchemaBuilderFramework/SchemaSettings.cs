@@ -26,7 +26,11 @@ namespace SchemaBuilderFramework
         /// <summary>
         /// indicates whether we need to copy the generalizations for classes
         /// </summary>
-        bool copyGeneralizations { get; set; }
+        bool copyExternalGeneralizations { get; set; }
+        /// <summary>
+        /// ignores wether or not the generalization is selected in the profile
+        /// </summary>
+        bool copyAllGeneralizations { get; set; }
         /// <summary>
         /// indicates if we need to copy the datatypes to the subset
         /// </summary>
