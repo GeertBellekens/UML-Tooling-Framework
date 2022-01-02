@@ -130,5 +130,9 @@ namespace SchemaBuilderFramework
         /// If the equivalent doesn't exist, the tagged value will not be retained in the subset model.
         /// </summary>
         List<string> synchronizedTaggedValues { get; set; }
+        /// <summary>
+        /// if true it this will create elements with the same name for the redefined elements, but use the redefined name in the alias
+        /// </summary>
+        bool useAliasForRedefinedElements { get; set; }
     }
 }
