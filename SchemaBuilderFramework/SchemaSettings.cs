@@ -138,5 +138,9 @@ namespace SchemaBuilderFramework
         /// copy all operations to the subset class
         /// </summary>
         bool copyAllOperations { get; set; }
+        /// <summary>
+        /// name of the tagged value to be used to reference operations
+        /// </summary>
+        string sourceOperationTagName { get; set; }
     }
 }
