@@ -78,7 +78,7 @@ namespace TSF.UmlToolingFramework.UML.Extended
 
         /// returns a collection of Elements based on the collection of objects to
         /// wrap
-        public ICollection<UML.Classes.Kernel.Element> createElements (IEnumerable objectsToWrap)
+        public ICollection<UML.Classes.Kernel.Element> createElements(IEnumerable objectsToWrap)
         {
             List<UML.Classes.Kernel.Element> elements = new List<UML.Classes.Kernel.Element>();
             foreach (Object objectToWrap in objectsToWrap)
@@ -480,10 +480,7 @@ namespace TSF.UmlToolingFramework.UML.Extended
                 }
                 else
                 {
-                    clonedProperty.type =
-                      this.cloneElement(clonedProperty, sourceProperty.type,
-                                        clonedElementsMap, false)
-                        as UML.Classes.Kernel.Type;
+                    clonedProperty.type = this.cloneElement(clonedProperty, sourceProperty.type, clonedElementsMap, false) as UML.Classes.Kernel.Type;
                 }
                 clonedProperty.aggregation = sourceProperty.aggregation;
                 clonedProperty.isNavigable = sourceProperty.isNavigable;
@@ -493,50 +490,42 @@ namespace TSF.UmlToolingFramework.UML.Extended
             }
             else if (element is UML.Classes.Kernel.PrimitiveType)
             {
-                clonedElement =
-                  this.createPrimitiveType
-                    (((UML.Classes.Kernel.PrimitiveType)element).name);
+                clonedElement = this.createPrimitiveType(((UML.Classes.Kernel.PrimitiveType)element).name);
             }
             else if (element is UML.Classes.Kernel.Comment)
             {
-                UML.Classes.Kernel.Comment sourceComment =
-                  (UML.Classes.Kernel.Comment)element;
+                var sourceComment = (UML.Classes.Kernel.Comment)element;
                 // comments do not have a name
-                UML.Classes.Kernel.Comment clonedComment =
-                  this.createNewElement<UML.Classes.Kernel.Comment>
-                    (owner, string.Empty);
+                var clonedComment = this.createNewElement<UML.Classes.Kernel.Comment>
+                     (owner, string.Empty);
                 // clone body
                 clonedComment.body = sourceComment.body;
                 //clone annotated elements
-                foreach (UML.Classes.Kernel.Element annotatedElement in
-                        sourceComment.annotatedElements)
+                foreach (var annotatedElement in sourceComment.annotatedElements)
                 {
-                    HashSet<UML.Classes.Kernel.Element> clonedAnnotatedElements =
-                      new HashSet<UML.Classes.Kernel.Element>();
-                    clonedAnnotatedElements.Add(
-                      this.cloneElement(owner, annotatedElement,
-                                         clonedElementsMap, false));
+                    var clonedAnnotatedElements = new HashSet<UML.Classes.Kernel.Element>();
+                    clonedAnnotatedElements.Add(this.cloneElement(owner, annotatedElement, clonedElementsMap, false));
                     clonedComment.annotatedElements = clonedAnnotatedElements;
                 }
                 clonedElement = clonedComment;
             }
 
-            // copy stereotypes
+
             if (clonedElement != null)
             {
+                // copy stereotypes
                 foreach (UML.Profiles.Stereotype stereotype in element.stereotypes)
                 {
-                    clonedElement.addStereotype(this.createStereotype(clonedElement,
-                                                                      stereotype.name));
+                    clonedElement.addStereotype(this.createStereotype(clonedElement, stereotype.name));
                 }
-            }
-            if (deep)
-            {
-                foreach (UML.Classes.Kernel.Element ownedElement in
-                         element.ownedElements)
+                //save cloned element before going deeper
+                clonedElement.save();
+                if (deep)
                 {
-                    this.cloneElement(clonedElement, ownedElement, clonedElementsMap,
-                                      true);
+                    foreach (var ownedElement in element.ownedElements)
+                    {
+                        this.cloneElement(clonedElement, ownedElement, clonedElementsMap, true);
+                    }
                 }
             }
             return clonedElement;

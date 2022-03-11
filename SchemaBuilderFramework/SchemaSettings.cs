@@ -134,5 +134,9 @@ namespace SchemaBuilderFramework
         /// if true it this will create elements with the same name for the redefined elements, but use the redefined name in the alias
         /// </summary>
         bool useAliasForRedefinedElements { get; set; }
+        /// <summary>
+        /// copy all operations to the subset class
+        /// </summary>
+        bool copyAllOperations { get; set; }
     }
 }
