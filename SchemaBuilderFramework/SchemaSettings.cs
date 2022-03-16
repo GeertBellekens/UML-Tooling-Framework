@@ -142,5 +142,9 @@ namespace SchemaBuilderFramework
         /// name of the tagged value to be used to reference operations
         /// </summary>
         string sourceOperationTagName { get; set; }
+        /// <summary>
+        /// use the multiplicity to determine the value of the "use" tag. "required" if lowerbound = 1, "optional" if lowerbound = 0
+        /// </summary>
+        bool useMultiplicityForUseTagOnXsdAttributes { get; set; }
     }
 }
