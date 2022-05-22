@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Windows.Forms;
 using TSF.UmlToolingFramework;
 
 namespace TSF.UmlToolingFramework.UML.Extended
@@ -537,13 +537,20 @@ namespace TSF.UmlToolingFramework.UML.Extended
         public virtual ICollection<UML.Profiles.TaggedValue> createTaggedValues(UML.Classes.Kernel.Element owner, IEnumerable taggedValuesToWrap)
         {
             List<UML.Profiles.TaggedValue> taggedValues = new List<UML.Profiles.TaggedValue>();
-            foreach (object tagToWrap in taggedValuesToWrap)
+            try
             {
-                UML.Profiles.TaggedValue taggedValue = this.createTaggedValue(owner, tagToWrap);
-                if (taggedValue != null)
+                foreach (object tagToWrap in taggedValuesToWrap)
                 {
-                    taggedValues.Add(taggedValue);
+                    UML.Profiles.TaggedValue taggedValue = this.createTaggedValue(owner, tagToWrap);
+                    if (taggedValue != null)
+                    {
+                        taggedValues.Add(taggedValue);
+                    }
                 }
+            }
+            catch (System.AccessViolationException e)
+            {
+                MessageBox.Show($"Error: {e.Message} {Environment.NewLine}{e.StackTrace}");
             }
             return taggedValues;
         }
