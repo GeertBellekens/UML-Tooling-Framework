@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Windows.Forms;
 using TSF.UmlToolingFramework;
 
@@ -533,7 +534,7 @@ namespace TSF.UmlToolingFramework.UML.Extended
 
         public abstract UML.Diagrams.DiagramElement createNewDiagramElement
             (UML.Diagrams.Diagram owner, UML.Classes.Kernel.Element element);
-
+        [HandleProcessCorruptedStateExceptions]
         public virtual ICollection<UML.Profiles.TaggedValue> createTaggedValues(UML.Classes.Kernel.Element owner, IEnumerable taggedValuesToWrap)
         {
             List<UML.Profiles.TaggedValue> taggedValues = new List<UML.Profiles.TaggedValue>();
