@@ -92,6 +92,7 @@
     <Compile Include="Activities\FundamentalActivities\ActivityNode.cs" />
     <Compile Include="Classes\AssociationClasses\AssociationClass.cs" />
     <Compile Include="Classes\Kernel\Multiplicity.cs" />
+    <Compile Include="Components\BasicComponents\Component.cs" />
     <Compile Include="Diagrams\ActivityDiagram.cs" />
     <Compile Include="Diagrams\BehaviorDiagram.cs" />
     <Compile Include="Diagrams\CommunicationDiagram.cs" />
