@@ -91,16 +91,16 @@ namespace TSF.UmlToolingFramework.UML.Extended
         }
         /// returns a collection of Elements based on the collection of objects to
         /// wrap all within the given owner object
-        public ICollection<UML.Classes.Kernel.Element> createElements
-          (IEnumerable objectsToWrap, UML.Classes.Kernel.Element owner)
-        {
-            List<UML.Classes.Kernel.Element> elements = new List<UML.Classes.Kernel.Element>();
-            foreach (Object objectToWrap in objectsToWrap)
-            {
-                elements.Add(this.createElement(objectToWrap, owner));
-            }
-            return elements;
-        }
+        //public ICollection<UML.Classes.Kernel.Element> createElements
+        //  (IEnumerable objectsToWrap, UML.Classes.Kernel.Element owner)
+        //{
+        //    List<UML.Classes.Kernel.Element> elements = new List<UML.Classes.Kernel.Element>();
+        //    foreach (Object objectToWrap in objectsToWrap)
+        //    {
+        //        elements.Add(this.createElement(objectToWrap, owner));
+        //    }
+        //    return elements;
+        //}
 
         /// create a new element as owned element of the given owner
         public abstract T createNewElement<T>(UML.Classes.Kernel.Element owner,
