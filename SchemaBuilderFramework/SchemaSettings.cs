@@ -10,13 +10,16 @@ namespace SchemaBuilderFramework
     /// </summary>
     public interface SchemaSettings
     {
-
         /// <summary>
-        /// list of tagged value names to ignore when updating tagged values
+        /// List of stereotypes for which the "ignore inheritance selection" works inverse
+        /// </summary>
+        List<string> inheritancExceptionStereotypes { get; set; }
+        /// <summary>
+        /// list of stereotypes of elements to ignore when updating a subset model
         /// </summary>
         List<string> ignoredStereotypes { get; set; }
         /// <summary>
-        /// list of stereotypes of elements to ignore when updating a subset model
+        /// list of tagged value names to ignore when updating tagged values
         /// </summary>
         List<string> ignoredTaggedValues { get; set; }
         /// <summary>
@@ -146,5 +149,11 @@ namespace SchemaBuilderFramework
         /// use the multiplicity to determine the value of the "use" tag. "required" if lowerbound = 1, "optional" if lowerbound = 0
         /// </summary>
         bool useMultiplicityForUseTagOnXsdAttributes { get; set; }
+        /// <summary>
+        /// Determines if all generalizations have to be copied for this element, based on the property CopyAllGeneralizations, and the inheritanceExceptionStereotypes
+        /// </summary>
+        /// <param name="element"></param>
+        /// <returns></returns>
+        bool copyAllGeneralizationsForElement(SchemaElement element);
     }
 }
