@@ -32,7 +32,12 @@ namespace TSF.UmlToolingFramework.UML.StateMachines.BehaviorStateMachines
 		/// Specifies an optional behavior to be performed when the transition fires.
 		/// </summary>
 		UML.CommonBehaviors.BasicBehaviors.Behavior effect {get;set;}
-		
+
+		/// <summary>
+		/// Specifies the Operation linked as Effect. (Non standard UML)
+		/// </summary>
+		UML.Classes.Kernel.Operation effectOperation { get; set; }
+
 		/// <summary>
 		/// Designates the originating vertex (state or pseudostate) of the transition.
 		/// </summary>

@@ -66,5 +66,12 @@ namespace TSF.UmlToolingFramework.UML.CommonBehaviors.BasicBehaviors
         //precondition was fulfilled before its invocation. (Subsets Namespace::ownedRule)
 		 HashSet<UML.Classes.Kernel.Constraint> postconditions{ get; set; }
 
-	}
+        /// <summary>
+        /// NON STANDARD UML
+        /// convenience method to get all Transitions that have this Behavior as effect
+        /// </summary>
+        /// <returns>all Transitions that have this Behavior as effect</returns>
+        HashSet<UML.StateMachines.BehaviorStateMachines.Transition> getDependentTransitions();
+
+    }
 }

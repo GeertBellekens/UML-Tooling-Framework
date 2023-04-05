@@ -31,5 +31,11 @@ namespace TSF.UmlToolingFramework.UML.Classes.Kernel {
         /// </summary>
         /// <returns>all CallOperationActions that call this operation</returns>
         HashSet<UML.Actions.BasicActions.CallOperationAction> getDependentCallOperationActions();
-        }
+        /// <summary>
+        /// NON STANDARD UML
+        /// convenience method to get all Transitions that have this operation as effect
+        /// </summary>
+        /// <returns>all Transitions that have this operation as effect</returns>
+        HashSet<UML.StateMachines.BehaviorStateMachines.Transition> getDependentTransitions();
+    }
 }
