@@ -82,6 +82,10 @@ namespace TSF.UmlToolingFramework.UML.Extended
         public ICollection<UML.Classes.Kernel.Element> createElements(IEnumerable objectsToWrap)
         {
             List<UML.Classes.Kernel.Element> elements = new List<UML.Classes.Kernel.Element>();
+            if (objectsToWrap == null)
+            {
+                return elements;
+            }
             foreach (Object objectToWrap in objectsToWrap)
             {
                 var newElement = this.createElement(objectToWrap);
