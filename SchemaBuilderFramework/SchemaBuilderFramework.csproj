@@ -67,7 +67,6 @@
     <Compile Include="SchemaAssociation.cs" />
     <Compile Include="SchemaBuilderFactory.cs" />
     <Compile Include="SchemaElement.cs" />
-    <Compile Include="SchemaLiteral.cs" />
     <Compile Include="SchemaProperty.cs" />
     <Compile Include="SchemaSettings.cs" />
   </ItemGroup>

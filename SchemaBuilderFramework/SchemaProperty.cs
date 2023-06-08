@@ -11,6 +11,8 @@ namespace SchemaBuilderFramework
 	{
 		UML.Classes.Kernel.Property sourceProperty {get;set;}
 		UML.Classes.Kernel.Property subSetProperty {get;set;}
+		UML.Classes.Kernel.EnumerationLiteral sourceLiteral { get; set; }
+		UML.Classes.Kernel.EnumerationLiteral subSetLiteral { get; set; }
 		SchemaElement owner {get;set;}
 		void createSubsetProperty();
 		bool isNew {get;}
