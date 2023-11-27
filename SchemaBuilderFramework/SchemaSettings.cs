@@ -150,6 +150,15 @@ namespace SchemaBuilderFramework
         /// </summary>
         bool useMultiplicityForUseTagOnXsdAttributes { get; set; }
         /// <summary>
+        /// Move elements to a recycle bin package instead of deleting
+        /// </summary>
+        bool useRecycleBin { get; set; }
+        /// <summary>
+        /// The name of the recycle bin package
+        /// </summary>
+	    string recycleBinName { get; set; }
+
+        /// <summary>
         /// Determines if all generalizations have to be copied for this element, based on the property CopyAllGeneralizations, and the inheritanceExceptionStereotypes
         /// </summary>
         /// <param name="element"></param>
