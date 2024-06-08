@@ -41,12 +41,12 @@ namespace TSF.UmlToolingFramework.UML.StateMachines.BehaviorStateMachines
 		/// <summary>
 		/// Designates the originating vertex (state or pseudostate) of the transition.
 		/// </summary>
-		Vertex source {get;set;}
+		Vertex sourceVertex {get;set;}
 		
 		/// <summary>
 		/// Designates the target vertex that is reached when the transition is taken.
 		/// </summary>
-		Vertex target {get;set;}
+		Vertex targetVertex {get;set;}
 		
 		/// <summary>
 		/// The transition of which this is a replacement. {Subsets RedefinableElement::redefinedElement}
